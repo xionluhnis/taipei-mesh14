@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="47cm" height="17cm" viewBox="318 18 923 323" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="320" y="20" width="98.6687" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="20" width="98.6687" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="369.334" y="45.9">
+      <tspan x="369.334" y="45.9">Source File</tspan>
+      <tspan x="369.334" y="61.9">.cpp</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="320" y="280" width="98.6687" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="280" width="98.6687" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="369.334" y="305.9">
+      <tspan x="369.334" y="305.9">Header File</tspan>
+      <tspan x="369.334" y="321.9">.h / .hpp</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="530" cy="150" rx="50" ry="50"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="530" cy="150" rx="50" ry="50"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="530" y="153.9">
+      <tspan x="530" y="153.9">Pre-process</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="690" cy="150" rx="50" ry="50"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="690" cy="150" rx="50" ry="50"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="690" y="153.9">
+      <tspan x="690" y="153.9">Compile</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="800" y="120" width="98.6687" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="800" y="120" width="98.6687" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="849.334" y="145.9">
+      <tspan x="849.334" y="145.9">Object File</tspan>
+      <tspan x="849.334" y="161.9">.o</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="958" y="280" width="103.95" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="958" y="280" width="103.95" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1009.98" y="305.9">
+      <tspan x="1009.98" y="305.9">Library Files</tspan>
+      <tspan x="1009.98" y="321.9">.so / .dll</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1120" y="120" width="120" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1120" y="120" width="120" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1180" y="145.9">
+      <tspan x="1180" y="145.9">Executable File</tspan>
+      <tspan x="1180" y="161.9">.bin / .exe</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="1010" cy="150" rx="50" ry="50"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="1010" cy="150" rx="50" ry="50"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1010" y="153.9">
+      <tspan x="1010" y="153.9">Link</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 508.968,93.0866 A 65.6009,65.6009 0 0 0 418.669,50"/>
+    <polygon style="fill: #000000" points="504.875,93.3129 510.774,102.81 514.832,92.3925 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="504.875,93.3129 510.774,102.81 514.832,92.3925 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 418.669,310 A 92.8184,92.8184 0 0 0 512.71,206.98"/>
+    <polygon style="fill: #000000" points="518.225,205.777 511.092,197.168 508.485,208.04 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="518.225,205.777 511.092,197.168 508.485,208.04 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="580.977" y1="150" x2="628.023" y2="150"/>
+    <polygon style="fill: #000000" points="628.023,155 638.023,150 628.023,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="628.023,155 638.023,150 628.023,145 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="741.008" y1="150" x2="788.037" y2="150"/>
+    <polygon style="fill: #000000" points="788.037,155 798.037,150 788.037,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="788.037,155 798.037,150 788.037,145 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="899.67" y1="150" x2="947.998" y2="150"/>
+    <polygon style="fill: #000000" points="947.998,155 957.998,150 947.998,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="947.998,155 957.998,150 947.998,145 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1009.98" y1="279.023" x2="1009.99" y2="211.977"/>
+    <polygon style="fill: #000000" points="1014.99,211.977 1009.99,201.977 1004.99,211.976 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1014.99,211.977 1009.99,201.977 1004.99,211.976 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1060.99" y1="150" x2="1108.03" y2="150"/>
+    <polygon style="fill: #000000" points="1108.03,155 1118.03,150 1108.03,145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1108.03,155 1118.03,150 1108.03,145 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="320" y="200" width="98.6687" height="60"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="320" y="200" width="98.6687" height="60"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="369.334" y="225.9">
+      <tspan x="369.334" y="225.9">Header File</tspan>
+      <tspan x="369.334" y="241.9">.h / .hpp</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 418.669,230 A 84.963,84.963 0 0 0 488.85,194.625"/>
+    <polygon style="fill: #000000" points="493.827,197.411 494.17,186.236 485.024,192.666 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="493.827,197.411 494.17,186.236 485.024,192.666 "/>
+  </g>
+</svg>
