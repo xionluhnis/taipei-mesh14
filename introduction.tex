@@ -1,0 +1,124 @@
+\documentclass{fancyslides} 
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{algorithm2e}
+\usepackage{listings}
+
+
+%%% Beamer settings (do not change)
+\usetheme{default} 
+\setbeamertemplate{navigation symbols}{} %no navigation symbols
+\setbeamercolor{structure}{fg=\yourowntexcol} 
+\setbeamercolor{normal text}{fg=\yourowntexcol} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CUSTOMISATIONS %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% THE FOLLOWING COLOURS ARE PREDEFINED IN THE CLASS
+%bi -- WHITE
+%cz -- BLACK
+%sz -- GRAY
+%nieb -- BLUE
+%ziel -- GREEN
+%pom -- ORANGE
+%% YOU CAN DEFINE YOUR OWN COLOUR TO USE HERE. SEE MAN.PDF
+
+
+%%%% SLIDE ELEMENTS
+\newcommand{\structureopacity}{0.75} %opacity for the structure elements (boxes and dots)
+\newcommand{\strcolor}{ziel} %elements colour (predefined nieb; pom; ziel)
+
+%%%% TEXT COLOUR
+\newcommand{\yourowntexcol}{bi}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TITLE SLIDE DATA %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\titlephrase}{Mesh Processing with OpenMesh and C++}
+\newcommand{\name}{Alexandre Kaspar}
+\newcommand{\affil}{EPFL / MIT}
+\newcommand{\email}{akaspar@mit.edu}
+
+
+
+
+
+\begin{document}
+
+%\fontencoding{T1}
+%\fontfamily{serif}
+%\fontseries{m}
+%\fontshape{it}
+%\fontsize{12}{15}
+%\selectfont
+
+\startingslide %this generates titlepage from the data above
+
+
+
+
+\fbckg{figures/3dparis}
+\begin{frame}
+\pointedsl{C++}
+\end{frame}
+
+% based on http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-096-introduction-to-c-january-iap-2011/index.htm
+
+%\fbckg{figures/3dparis}
+\begin{frame}
+\framedsl{explained clearly}
+\end{frame}
+
+
+\fbckg{figures/3dparis}
+\begin{frame}
+\itemized{
+\item BEAMER EASE OF USE
+\item MODERN LOOK \& FEEL
+}
+\end{frame}
+
+
+
+
+
+
+\fbckg{figures/3dparis}
+\begin{frame}
+\framedsl{
+	\pitem{pointed slogan}
+	\pitem{framed slogan}
+	\pitem{beamer features}
+}
+\end{frame}
+
+
+
+
+
+
+
+\fbckg{figures/3dparis}
+\begin{frame}
+  \thankyou   %%%% ending slide with thank you notice
+\end{frame}
+
+
+
+
+
+\fbckg{figures/3dparis}
+\begin{frame}
+\sources{
+\includegraphics[width=1cm]{figures/C++-logo} \ flickr/lovelornpoets\\
+\includegraphics[width=1cm]{figures/C++-logo} \ flickr/apsmuseum
+}
+\end{frame}
+
+
+\end{document}
