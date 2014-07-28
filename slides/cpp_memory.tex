@@ -1,0 +1,28 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% C++ and Memory %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\pointedsl{
+	Stack / Heap
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{References}
+\begin{lstlisting}
+// passed by reference
+void swap_ref(int &x, int &y){
+    int tmp = x;
+    x = y;
+    y = tmp;
+}
+int a = 1, b = 2;
+swap_ref(a, b);
+// good! a=2, b=1
+\end{lstlisting}
+\misc{
+	\emph{References} are syntactic sugar for pointers when passing variables to functions or retrieving the value they return.
+}
+\end{frame}

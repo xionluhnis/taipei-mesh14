@@ -2,7 +2,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% CPP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \fbckg{backgrounds/code2}
 \begin{frame}
 \pointedsl{C++}
@@ -13,8 +12,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% History %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\fbckg{backgrounds/code2}
 \begin{frame}
 \frametitle{History}
 \itemized{
@@ -28,7 +25,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Compiling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \fbckg{backgrounds/blank2}
 \begin{frame}
 \frametitle{Compiling}
@@ -45,11 +41,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Hello world %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{Hello World}
 \begin{lstlisting}
-#include<stdio.h>
 #include<iostream>
 // A comment
 int main(int argc, char **argv){
@@ -65,11 +59,9 @@ int main(int argc, char **argv){
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Pre-processor %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{Pre-processor instructions}
 \begin{lstlisting}
-#include<stdio.h>
 #include<iostream>
 \end{lstlisting}
 \misc{
@@ -85,14 +77,13 @@ int main(int argc, char **argv){
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Comments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{Comments}
-\begin{lstlisting}[firstnumber=3]
+\begin{lstlisting}[firstnumber=2]
 // A comment (up to the end of the line)
 \end{lstlisting}
 \stext{or}
-\begin{lstlisting}[firstnumber=3]
+\begin{lstlisting}[firstnumber=2]
 /* A comment 
 possibly spanning
 multiple lines */
@@ -105,10 +96,9 @@ multiple lines */
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Main function %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{Main function}
-\begin{lstlisting}[firstnumber=4]
+\begin{lstlisting}[firstnumber=3]
 int main(int argc, char **argv){
     ...
     return 0;
@@ -125,8 +115,8 @@ int main(int argc, char **argv){
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Main function}
-\begin{lstlisting}[firstnumber=4]
+\frametitle{Main function (2)}
+\begin{lstlisting}[firstnumber=3]
 int main(int argc, char **argv){
     ...
     return 0;
@@ -145,16 +135,17 @@ int main(int argc, char **argv){
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Output statement %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{frame}[fragile]
 \frametitle{Output statement}
-\begin{lstlisting}[firstnumber=5]
+\begin{lstlisting}[firstnumber=4]
 std::cout << "Hello world!\n";
 \end{lstlisting}
-\itemized{
+\misc{
+\begin{itemize}
 	\item \ctext{std} is the standard \emph{namespace}.
 	\item \ctext{cout} is a \emph{Stream} object.
 	\item \ctext{<<} is the output operator of \emph{Stream}.
 	\item \ctext{"Hello world"} is the string being output.
+\end{itemize}
 }
 \end{frame}

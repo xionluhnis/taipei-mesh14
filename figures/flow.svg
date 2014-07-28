@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="23cm"
+   height="10cm"
+   viewBox="538 58 443 183"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="flow.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1231"
+     inkscape:window-height="710"
+     id="namedview82"
+     showgrid="false"
+     inkscape:zoom="0.80740096"
+     inkscape:cx="-196.76426"
+     inkscape:cy="172.44089"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g56" />
+  <metadata
+     id="metadata86">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs84" />
+  <g
+     id="g4">
+    <rect
+       id="rect6"
+       height="40"
+       width="80"
+       y="100"
+       x="900"
+       style="fill: #ffffff" />
+    <rect
+       id="rect8"
+       height="40"
+       width="80"
+       y="100"
+       x="900"
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+    <text
+       id="text10"
+       y="123.9"
+       x="940"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       font-size="12.8">
+      <tspan
+         id="tspan12"
+         y="123.9"
+         x="940">do_a();</tspan>
+    </text>
+  </g>
+  <g
+     id="g14">
+    <polyline
+       id="polyline16"
+       points="801.759,170 840,120 889,120 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" />
+    <polygon
+       id="polygon18"
+       points="889,125 899,120 889,115 "
+       style="fill: #000000" />
+    <polygon
+       id="polygon20"
+       points="889,125 899,120 889,115 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+  </g>
+  <g
+     id="g22">
+    <rect
+       id="rect24"
+       height="40"
+       width="80"
+       y="200"
+       x="900"
+       style="fill: #ffffff" />
+    <rect
+       id="rect26"
+       height="40"
+       width="80"
+       y="200"
+       x="900"
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+    <text
+       id="text28"
+       y="223.9"
+       x="940"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       font-size="12.8">
+      <tspan
+         id="tspan30"
+         y="223.9"
+         x="940">do_b();</tspan>
+    </text>
+  </g>
+  <g
+     id="g32">
+    <polyline
+       id="polyline34"
+       points="801.759,170 840,220 889,220 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" />
+    <polygon
+       id="polygon36"
+       points="889,225 899,220 889,215 "
+       style="fill: #000000" />
+    <polygon
+       id="polygon38"
+       points="889,225 899,220 889,215 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+  </g>
+  <text
+     id="text40"
+     y="144.264"
+     x="860"
+     style="fill: #005c00;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+     font-size="12.7998">
+    <tspan
+       id="tspan42"
+       y="144.264"
+       x="860">true</tspan>
+  </text>
+  <text
+     id="text44"
+     y="204.264"
+     x="860"
+     style="fill: #ff0000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+     font-size="12.7998">
+    <tspan
+       id="tspan46"
+       y="204.264"
+       x="860">false</tspan>
+  </text>
+  <g
+     id="g48">
+    <path
+       id="path50"
+       d="M 940,100 A 115.867,115.867 0 0 0 755.788,110.624"
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+    <polygon
+       id="polygon52"
+       points="750.962,107.947 750.584,119.121 759.75,112.719 "
+       style="fill: #000000" />
+    <polygon
+       id="polygon54"
+       points="750.962,107.947 750.584,119.121 759.75,112.719 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+  </g>
+  <g
+     id="g56">
+    <rect
+       id="rect58"
+       height="100"
+       width="104.85"
+       y="120"
+       x="540"
+       style="fill: #ffffff" />
+    <rect
+       id="rect60"
+       height="100"
+       width="104.85"
+       y="120"
+       x="540"
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+    <text
+       id="text62"
+       y="149.89999"
+       x="549"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+       font-size="12.8">
+      <tspan
+         id="tspan64"
+         y="149.89999"
+         x="549">while(cond){</tspan>
+    </text>
+    <text
+       id="text3122"
+       y="165.89999"
+       x="568.56885"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+       font-size="12.8">
+      <tspan
+         id="tspan66"
+         y="165.89999"
+         x="568.56885">do_a();</tspan>
+    </text>
+    <text
+       id="text3125"
+       y="181.89999"
+       x="549"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+       font-size="12.8">
+      <tspan
+         id="tspan68"
+         y="181.89999"
+         x="549">}</tspan>
+    </text>
+    <text
+       id="text3128"
+       y="197.89999"
+       x="549"
+       style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:start;fill:#000000;font-family:sans-serif"
+       font-size="12.8">
+      <tspan
+         id="tspan70"
+         y="197.89999"
+         x="549">do_b();</tspan>
+    </text>
+  </g>
+  <g
+     id="g72">
+    <polygon
+       id="polygon74"
+       points="750.107,120 800.213,170 750.107,220 700,170 "
+       style="fill: #ffffff" />
+    <polygon
+       id="polygon76"
+       points="750.107,120 800.213,170 750.107,220 700,170 "
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" />
+    <text
+       id="text78"
+       y="173.9"
+       x="750.107"
+       style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+       font-size="12.7998">
+      <tspan
+         id="tspan80"
+         y="173.9"
+         x="750.107">cond ?</tspan>
+    </text>
+  </g>
+</svg>
