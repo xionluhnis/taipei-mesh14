@@ -41,7 +41,7 @@ T sum(T a, T b){
 	Function (and class) \emph{templates} provides a way to abstract the notion of type.
 	
 	Here, the type \ctext{T} is resolved by the compiler when \ctext{sum} is used.
-	It only requires an operator \ctext{+} to work.
+  It only requires an operator \ctext{+} to work${}^*$.
 }
 \end{frame}
 
@@ -68,7 +68,7 @@ struct vec {
     typedef vec<T, dim> this_type;
     T val[dim];
     vec(T a, T b);
-    double sqLength() const;
+    T sqLength() const;
     static this_type constant(T a);
 };
 \end{lstlisting}
@@ -83,7 +83,7 @@ struct vec {
 \begin{lstlisting}
 // definitions
 template <typename T, int dim>
-double vec<T, dim>::sqLength() {
+T vec<T, dim>::sqLength() {
     T sum = 0;
     for(int i = 0; i < dim; ++i)
         sum += val[i] * val[i];
@@ -102,7 +102,7 @@ double vec<T, dim>::sqLength() {
 typedef vec<float, 2> vec2f;
 
 // class usage
-vec2f a = vec2f::constant(2);
+vec2f a = vec2f::constant(2); // (2, 2)
 float d = a.sqLength(); // d=8
 \end{lstlisting}
 \misc{
@@ -125,6 +125,6 @@ vec2f operator +(const vec2f &v1,
 // usage
 vec2f a, b;
 // hidden: initialization of a and b
-vec3f c = a + b;
+vec2f c = a + b;
 \end{lstlisting}
 \end{frame}
