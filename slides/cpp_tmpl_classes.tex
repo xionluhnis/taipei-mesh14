@@ -42,11 +42,11 @@ float e = sum<float>(1, 2.0f);
 \begin{lstlisting}
 template<>
 bool sum<bool>(bool a, bool b){
-    return a ^ b; // a xor b
+    return a || b; // a or b
 }
-bool a = true, b = true;
+bool a = true, b = false;
 bool c = sum(a, b);
-// c == false
+// c == true
 \end{lstlisting}
 \misc{
 	Templates can be specialized for a given type.
@@ -91,7 +91,9 @@ T vec<T, dim>::sqLength() {
 }
 \end{lstlisting}
 \misc{
-	Definition of methods (including the constructor \ctext{vec} and/or its possible destructor \ctext{{\raise.17ex\hbox{$\scriptstyle\sim$}}vec} can be done separately.
+	Member definitions can be done separately.
+	
+	Typically, the declaration would be in a \ctext{.h} file and the definition in a \ctext{.cpp} file.
 }
 \end{frame}
 
@@ -107,7 +109,7 @@ float d = a.sqLength(); // d=8
 \end{lstlisting}
 \misc{
 	Static properties and methods are called with the namespace operator (\ctext{::}) whereas
-	instance properties and methods are accessed with the dot operator.
+	instance members are accessed using the dot operator.
 }
 \end{frame}
 

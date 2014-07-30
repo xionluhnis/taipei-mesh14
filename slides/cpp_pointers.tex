@@ -73,13 +73,13 @@ swap_ref(a, b);
 \begin{lstlisting}
 int a[5] = { 1 };
 int *b = &a[0];
-b += 3;
-*b = 42;
-b[1] = 5;
+int *c = b + 3;
+*c = 42; // or c[0]
+c[1] = 5;
 \end{lstlisting}
   \end{column}
   \begin{column}{0.5\textwidth}
-    \includegraphics[width=0.7\textwidth]{figures/array.pdf}
+    \includegraphics[width=\textwidth]{figures/array.pdf}
   \end{column}
 \end{columns}
 \misc{

@@ -4,8 +4,8 @@
   <g>
     <rect style="fill: #ffffff" x="340" y="100" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="340" y="100" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="370" y="123.9">
-      <tspan x="370" y="123.9">a</tspan>
+    <text font-size="13.5467" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="370" y="124.133">
+      <tspan x="370" y="124.133">a:</tspan>
     </text>
   </g>
   <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="120">
@@ -17,43 +17,43 @@
   <g>
     <rect style="fill: #ffffff" x="400" y="140" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="400" y="140" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="163.9">
-      <tspan x="430" y="163.9">a[0]</tspan>
+    <text font-size="13.5467" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="164.133">
+      <tspan x="430" y="164.133">a[0]</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="460" y="140" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="460" y="140" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="490" y="163.9">
-      <tspan x="490" y="163.9">a[1]</tspan>
+    <text font-size="13.5467" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="490" y="164.133">
+      <tspan x="490" y="164.133">a[1]</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="520" y="140" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ffffff" x="520" y="140" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="550" y="163.9">
-      <tspan x="550" y="163.9">a[2]</tspan>
+    <text font-size="13.5467" style="fill: #3678ff;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="550" y="164.133">
+      <tspan x="550" y="164.133">a[2]</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="400" y="100" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="400" y="100" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="123.9">
-      <tspan x="430" y="123.9">1</tspan>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="430" y="124.133">
+      <tspan x="430" y="124.133">1</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="520" y="100" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="520" y="100" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="550" y="123.9">
-      <tspan x="550" y="123.9">0</tspan>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="550" y="124.133">
+      <tspan x="550" y="124.133">0</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="460" y="100" width="60" height="40"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="460" y="100" width="60" height="40"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="490" y="123.9">
-      <tspan x="490" y="123.9">42</tspan>
+    <text font-size="13.5467" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="490" y="124.133">
+      <tspan x="490" y="124.133">42</tspan>
     </text>
   </g>
 </svg>

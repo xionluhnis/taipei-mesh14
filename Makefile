@@ -1,10 +1,10 @@
 all: pdf
 
 pdf:
-	pdflatex introduction
-	bibtex introduction
-	pdflatex introduction
-	pdflatex introduction
+	pdflatex introduction_cpp
+	bibtex introduction_cpp
+	pdflatex introduction_cpp
+	pdflatex introduction_cpp
 
 clean:
 	rm -f *.aux *.log *.bbl *.blg *.toc *.lof *.lot *.out *.bcf *.xml *-blx.* *.snm *.nav *.vrb
