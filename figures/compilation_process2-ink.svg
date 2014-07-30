@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="41cm"
+   height="22cm"
+   viewBox="808 -472 816 425"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="compilation_process2.pdf">
+  <metadata
+     id="metadata362">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs360" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1171"
+     inkscape:window-height="698"
+     id="namedview358"
+     showgrid="false"
+     inkscape:zoom="0.22646613"
+     inkscape:cx="726.37793"
+     inkscape:cy="389.76379"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Run"
+     style="display:none">
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g236">
+      <rect
+         style="fill:#ffffff"
+         x="1380"
+         y="-380"
+         width="120"
+         height="40"
+         id="rect238" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x="1380"
+         y="-380"
+         width="120"
+         height="40"
+         id="rect240" />
+      <text
+         font-size="12.8"
+         style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+         x="1440"
+         y="-356.10001"
+         id="text242">
+        <tspan
+           x="1440"
+           y="-356.10001"
+           id="tspan244">Loader</tspan>
+      </text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g246">
+      <rect
+         style="fill:#ffffff"
+         x="1380"
+         y="-300"
+         width="120"
+         height="40"
+         id="rect248" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x="1380"
+         y="-300"
+         width="120"
+         height="40"
+         id="rect250" />
+      <text
+         font-size="12.8"
+         style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+         x="1440"
+         y="-276.10001"
+         id="text252">
+        <tspan
+           x="1440"
+           y="-276.10001"
+           id="tspan254">CPU</tspan>
+      </text>
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g256">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="1440"
+         y1="-339.02301"
+         x2="1440"
+         y2="-311.97699"
+         id="line258" />
+      <polygon
+         style="fill:#000000"
+         points="1440,-301.977 1445,-311.977 1435,-311.977 "
+         id="polygon260" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="1440,-301.977 1445,-311.977 1435,-311.977 "
+         id="polygon262" />
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g264">
+      <line
+         style="fill:none;stroke:#717171;stroke-width:2;stroke-dasharray:4"
+         x1="1440"
+         y1="-259.009"
+         x2="1440"
+         y2="-231"
+         id="line266" />
+      <polygon
+         style="fill:#717171"
+         points="1440,-221 1445,-231 1435,-231 "
+         id="polygon268" />
+      <polygon
+         style="fill:none;stroke:#717171;stroke-width:2"
+         points="1440,-221 1445,-231 1435,-231 "
+         id="polygon270" />
+    </g>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g272">
+      <line
+         style="fill:none;stroke:#717171;stroke-width:2;stroke-dasharray:4"
+         x1="1320"
+         y1="-280"
+         x2="1368"
+         y2="-280"
+         id="line274" />
+      <polygon
+         style="fill:#717171"
+         points="1378,-280 1368,-285 1368,-275 "
+         id="polygon276" />
+      <polygon
+         style="fill:none;stroke:#717171;stroke-width:2"
+         points="1378,-280 1368,-285 1368,-275 "
+         id="polygon278" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;display:inline"
+       d="m 1307.5226,-336.65372 c 40,0 0,59.99999 40,59.99999"
+       id="path280" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;display:inline"
+       d="m 1307.5226,-216.65371 c 40,0 0,-60.00002 40,-60.00002"
+       id="path282" />
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;display:inline;font-family:sans-serif"
+       x="1367.5226"
+       y="-272.20374"
+       id="text284">
+      <tspan
+         x="1367.5226"
+         y="-272.20374"
+         id="tspan286">Run</tspan>
+    </text>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;display:inline;font-family:sans-serif"
+       x="1047.5226"
+       y="-232.20372"
+       id="text288">
+      <tspan
+         x="1047.5226"
+         y="-232.20372"
+         id="tspan290">Input</tspan>
+    </text>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;display:inline;font-family:sans-serif"
+       x="1187.5226"
+       y="-152.2037"
+       id="text292">
+      <tspan
+         x="1187.5226"
+         y="-152.2037"
+         id="tspan294">Output</tspan>
+    </text>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g296">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="1439.58"
+         y1="-420.492"
+         x2="1439.78"
+         y2="-391.97699"
+         id="line298" />
+      <polygon
+         style="fill:#000000"
+         points="1439.85,-381.977 1444.78,-392.012 1434.78,-391.942 "
+         id="polygon300" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="1439.85,-381.977 1444.78,-392.012 1434.78,-391.942 "
+         id="polygon302" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;display:inline;font-family:sans-serif"
+       x="1235.5227"
+       y="-404.20377"
+       id="text304">
+      <tspan
+         x="1235.5227"
+         y="-404.20377"
+         id="tspan306">Executable</tspan>
+      <tspan
+         x="1235.5227"
+         y="-388.20377"
+         id="tspan308">File</tspan>
+    </text>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g310">
+      <polygon
+         style="fill:#ffffff"
+         points="1420,-421.5 1420,-470 1449.1,-470 1458.8,-460.3 1458.8,-421.5 "
+         id="polygon312" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1420,-421.5 1420,-470 1449.1,-470 1458.8,-460.3 1458.8,-421.5 "
+         id="polygon314" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1449.1,-470 1449.1,-460.3 1458.8,-460.3 1458.8,-460.3 "
+         id="polyline316" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;display:inline;font-family:sans-serif"
+       x="1206.9226"
+       y="-397.95377"
+       id="text318">
+      <tspan
+         x="1206.9226"
+         y="-397.95377"
+         id="tspan320">.exe</tspan>
+    </text>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g322">
+      <polygon
+         style="fill:#ffffff"
+         points="1312,-340 1312,-380 1336,-380 1344,-372 1344,-340 "
+         id="polygon324" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1312,-340 1312,-380 1336,-380 1344,-372 1344,-340 "
+         id="polygon326" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1336,-380 1336,-372 1344,-372 1344,-372 "
+         id="polyline328" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;display:inline;font-family:sans-serif"
+       x="1095.5226"
+       y="-312.20377"
+       id="text330">
+      <tspan
+         x="1095.5226"
+         y="-312.20377"
+         id="tspan332">.so</tspan>
+    </text>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g334">
+      <polygon
+         style="fill:#ffffff"
+         points="1272,-340 1272,-380 1296,-380 1304,-372 1304,-340 "
+         id="polygon336" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1272,-340 1272,-380 1296,-380 1304,-372 1304,-340 "
+         id="polygon338" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="1296,-380 1296,-372 1304,-372 1304,-372 "
+         id="polyline340" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;display:inline;font-family:sans-serif"
+       x="1055.5226"
+       y="-312.20377"
+       id="text342">
+      <tspan
+         x="1055.5226"
+         y="-312.20377"
+         id="tspan344">.dll</tspan>
+    </text>
+    <g
+       style="display:inline"
+       transform="translate(-232.47744,43.346309)"
+       id="g346">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="1344"
+         y1="-360"
+         x2="1369"
+         y2="-360"
+         id="line348" />
+      <polygon
+         style="fill:#000000"
+         points="1379,-360 1369,-365 1369,-355 "
+         id="polygon350" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="1379,-360 1369,-365 1369,-355 "
+         id="polygon352" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;display:inline;font-family:sans-serif"
+       x="1039.5226"
+       y="-342.20377"
+       id="text354">
+      <tspan
+         x="1039.5226"
+         y="-342.20377"
+         id="tspan356">Shared libraries</tspan>
+    </text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Build"
+     style="display:inline">
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g4">
+      <rect
+         style="fill:#ffffff"
+         x="920"
+         y="-380"
+         width="120"
+         height="40"
+         id="rect6" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x="920"
+         y="-380"
+         width="120"
+         height="40"
+         id="rect8" />
+      <text
+         font-size="12.8"
+         style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+         x="980"
+         y="-356.10001"
+         id="text10">
+        <tspan
+           x="980"
+           y="-356.10001"
+           id="tspan12">Preprocessor</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g14">
+      <rect
+         style="fill:#ffffff"
+         x="920"
+         y="-300"
+         width="120"
+         height="40"
+         id="rect16" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x="920"
+         y="-300"
+         width="120"
+         height="40"
+         id="rect18" />
+      <text
+         font-size="12.8"
+         style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+         x="980"
+         y="-276.10001"
+         id="text20">
+        <tspan
+           x="980"
+           y="-276.10001"
+           id="tspan22">Compiler</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g24">
+      <rect
+         style="fill:#ffffff"
+         x="920"
+         y="-160"
+         width="120"
+         height="40"
+         id="rect26" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x="920"
+         y="-160"
+         width="120"
+         height="40"
+         id="rect28" />
+      <text
+         font-size="12.8"
+         style="font-size:12.80000019px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif"
+         x="980"
+         y="-136.10001"
+         id="text30">
+        <tspan
+           x="980"
+           y="-136.10001"
+           id="tspan32">Linker</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g34">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="980"
+         y1="-420.98999"
+         x2="980"
+         y2="-392.00299"
+         id="line36" />
+      <polygon
+         style="fill:#000000"
+         points="975,-392.003 980,-382.003 985,-392.003 "
+         id="polygon38" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="975,-392.003 980,-382.003 985,-392.003 "
+         id="polygon40" />
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g42">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="980"
+         y1="-339.02301"
+         x2="980"
+         y2="-311.97699"
+         id="line44" />
+      <polygon
+         style="fill:#000000"
+         points="975,-311.977 980,-301.977 985,-311.977 "
+         id="polygon46" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="975,-311.977 980,-301.977 985,-311.977 "
+         id="polygon48" />
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g50">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="980"
+         y1="-190"
+         x2="980"
+         y2="-172.002"
+         id="line52" />
+      <polygon
+         style="fill:#000000"
+         points="975,-172.002 980,-162.002 985,-172.002 "
+         id="polygon54" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="975,-172.002 980,-162.002 985,-172.002 "
+         id="polygon56" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2"
+       d="m 1306.019,-381.125 c 40,0 0,130 40,130"
+       id="path58" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2"
+       d="m 1306.019,-121.125 c 40,0 0,-130 40,-130"
+       id="path60" />
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1366.019"
+       y="-246.675"
+       id="text62">
+      <tspan
+         x="1366.019"
+         y="-246.675"
+         id="tspan64">Build</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g66">
+      <polygon
+         style="fill:#ffffff"
+         points="960,-418.75 960,-468.75 990,-468.75 1000,-458.75 1000,-418.75 "
+         id="polygon68" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="960,-418.75 960,-468.75 990,-468.75 1000,-458.75 1000,-418.75 "
+         id="polygon70" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="990,-468.75 990,-458.75 1000,-458.75 1000,-458.75 "
+         id="polyline72" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1206.019"
+       y="-440.42499"
+       id="text74">
+      <tspan
+         x="1206.019"
+         y="-440.42499"
+         id="tspan76">.cpp</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g78">
+      <polygon
+         style="fill:#ffffff"
+         points="850,-340 850,-380 874,-380 882,-372 882,-340 "
+         id="polygon80" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="850,-340 850,-380 874,-380 882,-372 882,-340 "
+         id="polygon82" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="874,-380 874,-372 882,-372 882,-372 "
+         id="polyline84" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1092.019"
+       y="-356.67499"
+       id="text86">
+      <tspan
+         x="1092.019"
+         y="-356.67499"
+         id="tspan88">.h</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g90">
+      <polygon
+         style="fill:#ffffff"
+         points="810,-340 810,-380 834,-380 842,-372 842,-340 "
+         id="polygon92" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="810,-340 810,-380 834,-380 842,-372 842,-340 "
+         id="polygon94" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="834,-380 834,-372 842,-372 842,-372 "
+         id="polyline96" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1052.019"
+       y="-356.67499"
+       id="text98">
+      <tspan
+         x="1052.019"
+         y="-356.67499"
+         id="tspan100">.h</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g102">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="882.99103"
+         y1="-360"
+         x2="908.21503"
+         y2="-360"
+         id="line104" />
+      <polygon
+         style="fill:#000000"
+         points="908.215,-355 918.215,-360 908.215,-365 "
+         id="polygon106" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="908.215,-355 918.215,-360 908.215,-365 "
+         id="polygon108" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1234.019"
+       y="-448.67499"
+       id="text110">
+      <tspan
+         x="1234.019"
+         y="-448.67499"
+         id="tspan112">Source</tspan>
+      <tspan
+         x="1234.019"
+         y="-432.67499"
+         id="tspan114">File</tspan>
+    </text>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1036.019"
+       y="-386.86099"
+       id="text116">
+      <tspan
+         x="1036.019"
+         y="-386.86099"
+         id="tspan118">Header files</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g120">
+      <polygon
+         style="fill:#ffffff"
+         points="850,-120 850,-160 874,-160 882,-152 882,-120 "
+         id="polygon122" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="850,-120 850,-160 874,-160 882,-152 882,-120 "
+         id="polygon124" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="874,-160 874,-152 882,-152 882,-152 "
+         id="polyline126" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1092.019"
+       y="-136.67499"
+       id="text128">
+      <tspan
+         x="1092.019"
+         y="-136.67499"
+         id="tspan130">.a</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g132">
+      <polygon
+         style="fill:#ffffff"
+         points="810,-120 810,-160 834,-160 842,-152 842,-120 "
+         id="polygon134" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="810,-120 810,-160 834,-160 842,-152 842,-120 "
+         id="polygon136" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="834,-160 834,-152 842,-152 842,-152 "
+         id="polyline138" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1052.019"
+       y="-136.67499"
+       id="text140">
+      <tspan
+         x="1052.019"
+         y="-136.67499"
+         id="tspan142">.lib</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g144">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="882"
+         y1="-140"
+         x2="908.013"
+         y2="-140"
+         id="line146" />
+      <polygon
+         style="fill:#000000"
+         points="908.013,-135 918.013,-140 908.013,-145 "
+         id="polygon148" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="908.013,-135 918.013,-140 908.013,-145 "
+         id="polygon150" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1036.019"
+       y="-166.675"
+       id="text152">
+      <tspan
+         x="1036.019"
+         y="-166.675"
+         id="tspan154">Static libraries</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g156">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="980"
+         y1="-239.99699"
+         x2="980"
+         y2="-259.00299"
+         id="line158" />
+      <polygon
+         style="fill:#000000"
+         points="975,-239.997 980,-229.997 985,-239.997 "
+         id="polygon160" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="975,-239.997 980,-229.997 985,-239.997 "
+         id="polygon162" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1230.019"
+       y="-212.86099"
+       id="text164">
+      <tspan
+         x="1230.019"
+         y="-212.86099"
+         id="tspan166">Object</tspan>
+      <tspan
+         x="1230.019"
+         y="-196.86099"
+         id="tspan168">File(s)</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g170">
+      <polygon
+         style="fill:#ffffff"
+         points="964,-188 964,-228 988,-228 996,-220 996,-188 "
+         id="polygon172" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="964,-188 964,-228 988,-228 996,-220 996,-188 "
+         id="polygon174" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="988,-228 988,-220 996,-220 996,-220 "
+         id="polyline176" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1206.019"
+       y="-204.675"
+       id="text178">
+      <tspan
+         x="1206.019"
+         y="-204.675"
+         id="tspan180">.o</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g182">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:4"
+         x1="936"
+         y1="-188"
+         x2="936"
+         y2="-172.002"
+         id="line184" />
+      <polygon
+         style="fill:#000000"
+         points="931,-172.002 936,-162.002 941,-172.002 "
+         id="polygon186" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="931,-172.002 936,-162.002 941,-172.002 "
+         id="polygon188" />
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g190">
+      <polygon
+         style="fill:#ffffff"
+         points="920,-188 920,-228 944,-228 952,-220 952,-188 "
+         id="polygon192" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2;stroke-dasharray:4"
+         points="920,-188 920,-228 944,-228 952,-220 952,-188 "
+         id="polygon194" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2;stroke-dasharray:4"
+         points="944,-228 944,-220 952,-220 952,-220 "
+         id="polyline196" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1162.019"
+       y="-204.675"
+       id="text198">
+      <tspan
+         x="1162.019"
+         y="-204.675"
+         id="tspan200">.o</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g202">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:4"
+         x1="909"
+         y1="-208"
+         x2="880"
+         y2="-208"
+         id="line204" />
+      <polygon
+         style="fill:#000000"
+         points="909,-203 919,-208 909,-213 "
+         id="polygon206" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="909,-203 919,-208 909,-213 "
+         id="polygon208" />
+    </g>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g210">
+      <line
+         style="fill:none;stroke:#000000;stroke-width:2"
+         x1="980"
+         y1="-100.004"
+         x2="980"
+         y2="-120"
+         id="line212" />
+      <polygon
+         style="fill:#000000"
+         points="975,-100.004 980,-90.0044 985,-100.004 "
+         id="polygon214" />
+      <polygon
+         style="fill:none;stroke:#000000;stroke-width:2"
+         points="975,-100.004 980,-90.0044 985,-100.004 "
+         id="polygon216" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:start;fill:#007eff;font-family:sans-serif"
+       x="1230.019"
+       y="-72.861313"
+       id="text218">
+      <tspan
+         x="1230.019"
+         y="-72.861313"
+         id="tspan220">Executable</tspan>
+      <tspan
+         x="1230.019"
+         y="-56.861313"
+         id="tspan222">File</tspan>
+    </text>
+    <g
+       transform="translate(226.01899,-1.125)"
+       id="g224">
+      <polygon
+         style="fill:#ffffff"
+         points="964,-48 964,-88 988,-88 996,-80 996,-48 "
+         id="polygon226" />
+      <polygon
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="964,-48 964,-88 988,-88 996,-80 996,-48 "
+         id="polygon228" />
+      <polyline
+         style="fill:none;stroke:#007300;stroke-width:2"
+         points="988,-88 988,-80 996,-80 996,-80 "
+         id="polyline230" />
+    </g>
+    <text
+       font-size="12.7998"
+       style="font-size:12.79979992px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#007300;font-family:sans-serif"
+       x="1206.019"
+       y="-64.86129"
+       id="text232">
+      <tspan
+         x="1206.019"
+         y="-64.86129"
+         id="tspan234">.exe</tspan>
+    </text>
+  </g>
+</svg>

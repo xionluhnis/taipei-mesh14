@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \pointedsl{
-	Basic C++
+	Basics
 }
 \end{frame}
 
@@ -49,65 +49,23 @@ int y = sum(x, 2);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{Arrays and pointers}
+\frametitle{Arrays}
 \begin{columns}[c]
   \begin{column}{0.5\textwidth}
 \lstset{language=C++,numbers=left}
 \begin{lstlisting}
-int a[5];
-a[0] = 1;
-int *b = &a[0];
-b += 3;
-*b = 42;
-b[1] = 5;
+int a[3] = { 1, 0 };
+a[1] = 42;
+// a[2] == 0
 \end{lstlisting}
   \end{column}
   \begin{column}{0.5\textwidth}
-    \includegraphics[width=0.7\textwidth]{figures/array.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/array0}
   \end{column}
 \end{columns}
 \misc{
-	\emph{Arrays} are continuous blocks of memory that store multiple elements of a same type (a fixed number of them!).
+	\emph{Arrays} are continuous blocks of memory that store multiple elements of a same type.
 	
-	\emph{Pointers} are a special type of variables that point to memory addresses.
+	They are $0$-based.
 }
 \end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]
-\frametitle{Passing by value}
-\begin{lstlisting}
-void swap_wrong(int x, int y){
-    int tmp = x;
-    x = y;
-    y = tmp;
-}
-int a = 1, b = 2;
-swap_wrong(a, b);
-// did not work! a=1, b=2
-\end{lstlisting}
-\misc{
-	Function arguments are \textbf{passed by value} (copy of value). We need pointers to modify \ctext{a} and \ctext{b} in the code above.
-}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]
-\frametitle{Correct swap using pointers}
-\begin{lstlisting}
-void swap_ptr(int *x, int *y){
-    int tmp = *x;
-    *x = *y;
-    *y = tmp;
-}
-int a = 1, b = 2;
-swap_ptr(&a, &b);
-// now a=2, b=1
-\end{lstlisting}
-\misc{
-	\ctext{\&a} uses the \textbf{reference} operator to get the adresse of \ctext{a}.
-	
-	\ctext{*x} uses the \textbf{dereference} operator to get / set the value at the adress given by \ctext{x}.
-}
-\end{frame}
-

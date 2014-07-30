@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="34cm" height="25cm" viewBox="779 -501 662 482" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="1120" y="-500" width="320" height="340"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1120" y="-500" width="320" height="340"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1280" y="-326.1">
+      <tspan x="1280" y="-326.1"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="780" y="-500" width="320" height="480"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="780" y="-500" width="320" height="480"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="940" y="-256.1">
+      <tspan x="940" y="-256.1"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="920" y="-380" width="120" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="920" y="-380" width="120" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-356.1">
+      <tspan x="980" y="-356.1">Preprocessor</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="920" y="-300" width="120" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="920" y="-300" width="120" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-276.1">
+      <tspan x="980" y="-276.1">Compiler</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="920" y="-160" width="120" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="920" y="-160" width="120" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-136.1">
+      <tspan x="980" y="-136.1">Linker</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="-420.99" x2="980" y2="-392.003"/>
+    <polygon style="fill: #000000" points="975,-392.003 980,-382.003 985,-392.003 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975,-392.003 980,-382.003 985,-392.003 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="-339.023" x2="980" y2="-311.977"/>
+    <polygon style="fill: #000000" points="975,-311.977 980,-301.977 985,-311.977 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975,-311.977 980,-301.977 985,-311.977 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="-190" x2="980" y2="-172.002"/>
+    <polygon style="fill: #000000" points="975,-172.002 980,-162.002 985,-172.002 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975,-172.002 980,-162.002 985,-172.002 "/>
+  </g>
+  <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="820" y="-454.55">
+    <tspan x="820" y="-454.55">Build</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="960,-468.75 990,-468.75 1000,-458.75 1000,-418.75 960,-418.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="960,-468.75 990,-468.75 1000,-458.75 1000,-418.75 960,-418.75 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="990,-468.75 990,-458.75 1000,-458.75 1000,-458.75 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-439.3">
+    <tspan x="980" y="-439.3">.cpp</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="850,-380 874,-380 882,-372 882,-340 850,-340 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="850,-380 874,-380 882,-372 882,-340 850,-340 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="874,-380 874,-372 882,-372 882,-372 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="866" y="-355.55">
+    <tspan x="866" y="-355.55">.h</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="810,-380 834,-380 842,-372 842,-340 810,-340 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="810,-380 834,-380 842,-372 842,-340 810,-340 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="834,-380 834,-372 842,-372 842,-372 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="826" y="-355.55">
+    <tspan x="826" y="-355.55">.h</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="882.991" y1="-360" x2="908.215" y2="-360"/>
+    <polygon style="fill: #000000" points="908.215,-355 918.215,-360 908.215,-365 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="908.215,-355 918.215,-360 908.215,-365 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1008" y="-447.55">
+    <tspan x="1008" y="-447.55">Source</tspan>
+    <tspan x="1008" y="-431.55">File</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="810" y="-385.736">
+    <tspan x="810" y="-385.736">Header files</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="850,-160 874,-160 882,-152 882,-120 850,-120 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="850,-160 874,-160 882,-152 882,-120 850,-120 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="874,-160 874,-152 882,-152 882,-152 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="866" y="-135.55">
+    <tspan x="866" y="-135.55">.a</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="810,-160 834,-160 842,-152 842,-120 810,-120 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="810,-160 834,-160 842,-152 842,-120 810,-120 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="834,-160 834,-152 842,-152 842,-152 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="826" y="-135.55">
+    <tspan x="826" y="-135.55">.lib</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="882" y1="-140" x2="908.013" y2="-140"/>
+    <polygon style="fill: #000000" points="908.013,-135 918.013,-140 908.013,-145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="908.013,-135 918.013,-140 908.013,-145 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="810" y="-165.55">
+    <tspan x="810" y="-165.55">Static libraries</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="-239.997" x2="980" y2="-259.003"/>
+    <polygon style="fill: #000000" points="975,-239.997 980,-229.997 985,-239.997 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975,-239.997 980,-229.997 985,-239.997 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1004" y="-211.736">
+    <tspan x="1004" y="-211.736">Object</tspan>
+    <tspan x="1004" y="-195.736">File(s)</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="964,-228 988,-228 996,-220 996,-188 964,-188 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="964,-228 988,-228 996,-220 996,-188 964,-188 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="988,-228 988,-220 996,-220 996,-220 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-203.55">
+    <tspan x="980" y="-203.55">.o</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="936" y1="-188" x2="936" y2="-172.002"/>
+    <polygon style="fill: #000000" points="931,-172.002 936,-162.002 941,-172.002 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="931,-172.002 936,-162.002 941,-172.002 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="920,-228 944,-228 952,-220 952,-188 920,-188 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #007300" points="920,-228 944,-228 952,-220 952,-188 920,-188 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #007300" points="944,-228 944,-220 952,-220 952,-220 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="936" y="-203.55">
+    <tspan x="936" y="-203.55">.o</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="909" y1="-208" x2="880" y2="-208"/>
+    <polygon style="fill: #000000" points="909,-203 919,-208 909,-213 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="909,-203 919,-208 909,-213 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="980" y1="-100.004" x2="980" y2="-120"/>
+    <polygon style="fill: #000000" points="975,-100.004 980,-90.0044 985,-100.004 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="975,-100.004 980,-90.0044 985,-100.004 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1004" y="-71.7363">
+    <tspan x="1004" y="-71.7363">Executable</tspan>
+    <tspan x="1004" y="-55.7363">File</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="964,-88 988,-88 996,-80 996,-48 964,-48 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="964,-88 988,-88 996,-80 996,-48 964,-48 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="988,-88 988,-80 996,-80 996,-80 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="980" y="-63.7363">
+    <tspan x="980" y="-63.7363">.exe</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="1260" y="-380" width="120" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1260" y="-380" width="120" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1320" y="-356.1">
+      <tspan x="1320" y="-356.1">Loader</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1260" y="-300" width="120" height="40"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1260" y="-300" width="120" height="40"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1320" y="-276.1">
+      <tspan x="1320" y="-276.1">CPU</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1320" y1="-339.023" x2="1320" y2="-311.977"/>
+    <polygon style="fill: #000000" points="1315,-311.977 1320,-301.977 1325,-311.977 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1315,-311.977 1320,-301.977 1325,-311.977 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #717171" x1="1320" y1="-259.009" x2="1320" y2="-231"/>
+    <polygon style="fill: #717171" points="1315,-231 1320,-221 1325,-231 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #717171" points="1315,-231 1320,-221 1325,-231 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #717171" x1="1200" y1="-280" x2="1248" y2="-280"/>
+    <polygon style="fill: #717171" points="1248,-275 1258,-280 1248,-285 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #717171" points="1248,-275 1258,-280 1248,-285 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1160" y="-275.55">
+    <tspan x="1160" y="-275.55">Input</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1300" y="-195.55">
+    <tspan x="1300" y="-195.55">Output</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1319.58" y1="-420.492" x2="1319.78" y2="-391.977"/>
+    <polygon style="fill: #000000" points="1314.78,-391.942 1319.85,-381.977 1324.78,-392.012 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1314.78,-391.942 1319.85,-381.977 1324.78,-392.012 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1348" y="-447.55">
+    <tspan x="1348" y="-447.55">Executable</tspan>
+    <tspan x="1348" y="-431.55">File</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="1300,-470 1329.1,-470 1338.8,-460.3 1338.8,-421.5 1300,-421.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1300,-470 1329.1,-470 1338.8,-460.3 1338.8,-421.5 1300,-421.5 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1329.1,-470 1329.1,-460.3 1338.8,-460.3 1338.8,-460.3 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1319.4" y="-441.3">
+    <tspan x="1319.4" y="-441.3">.exe</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="1192,-380 1216,-380 1224,-372 1224,-340 1192,-340 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1192,-380 1216,-380 1224,-372 1224,-340 1192,-340 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1216,-380 1216,-372 1224,-372 1224,-372 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1208" y="-355.55">
+    <tspan x="1208" y="-355.55">.so</tspan>
+  </text>
+  <g>
+    <polygon style="fill: #ffffff" points="1152,-380 1176,-380 1184,-372 1184,-340 1152,-340 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1152,-380 1176,-380 1184,-372 1184,-340 1152,-340 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #007300" points="1176,-380 1176,-372 1184,-372 1184,-372 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007300;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1168" y="-355.55">
+    <tspan x="1168" y="-355.55">.dll</tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1224" y1="-360" x2="1249" y2="-360"/>
+    <polygon style="fill: #000000" points="1249,-355 1259,-360 1249,-365 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1249,-355 1259,-360 1249,-365 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #007eff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1152" y="-385.55">
+    <tspan x="1152" y="-385.55">Shared libraries</tspan>
+  </text>
+  <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="1160" y="-454.78">
+    <tspan x="1160" y="-454.78">Run</tspan>
+  </text>
+</svg>

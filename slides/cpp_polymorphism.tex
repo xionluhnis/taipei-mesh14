@@ -1,0 +1,32 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% C++ and Memory %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\pointedsl{
+	Polymorphism
+}
+\end{frame}
+
+% See http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
+% See http://gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
+% See http://www.learncpp.com/cpp-tutorial/79-the-stack-and-the-heap/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{References}
+\begin{lstlisting}
+// passed by reference
+void swap_ref(int &x, int &y){
+    int tmp = x;
+    x = y;
+    y = tmp;
+}
+int a = 1, b = 2;
+swap_ref(a, b);
+// good! a=2, b=1
+\end{lstlisting}
+\misc{
+	\emph{References} are syntactic sugar for pointers when passing variables to functions or retrieving the value they return.
+}
+\end{frame}
