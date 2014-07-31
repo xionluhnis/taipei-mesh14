@@ -9,25 +9,26 @@ _Day 1_
 **Slides**: Introduction to C++
   0. History and compilation model
   1. Hello world
-  2. Basics (declaration, definition, functions, control flow, arrays)
-  3. Pointers
-  4. Templates
-  5. Classes
+  2. Basics (fibonacci: *variables, functions, flow control, arrays*)
+  3. Pointers (swap: *passing by value, by reference*)
+  4. Templates (function template, specialization)
+  5. Classes (declaration, definition, operator overloading, constructor, copy, destructor)
   6. Stack vs heap (scope, `new`, `delete`, array versions, smart pointers)
   7. Polymorphism (inheritance, `virtual` methods, virtual pure)
   8. Types and conversions (`const`, `static_cast`, `dynamic_cast`, `reinterpret_cast`, `const_cast`, `explicit`)
   9. C++0x, C++3, C++11 (lambda functions, type inference with `auto`)
 
-**Project**: BubbleBreaker with OpenFramework (OF)
-  - OF presentation (setup, update, draw)
-  - OFX addons preview
-  - Breakdown dissection
+**Project**: Voronoi + Surface Mesh with OpenFramework
+  - of presentation (setup, update, draw)
+  - ofx addons preview (ofxVoronoi, ofxUI, ofxPostProcessing)
+  - Code dissection
 
-**Slides**: Introduction to OpenMesh
+**Slides**: Introduction to OpenMesh / [OpenGP](http://opengp.github.io/tutorial.html)
   1. Half-edge data structure
   2. Iterators, circulators (one-ring)
   3. Custom properties
-  4. Modifying the topology
+  4. Connectivity (half-edges: *next, prev, opposite*, vertices: *from, to*)
+  5. Modifying the topology (basic: *add, remove*)
 
 **Project**: Mesh Property Visualization
   - Mesh import
@@ -35,11 +36,12 @@ _Day 1_
   - Mesh visualization
 
 _Day 2_
-**Slides**: Remeshing with OpenMesh
-  1. Laplacian smoothing
-  2. Simplification with quadrics?
-  3. Notion of curvature?
-  4. Adaptive remeshing?
+**Slides**: Remeshing with OpenMesh / OpenGP
+  1. Laplacian smoothing (uniform, normal-constrained)
+  2. Modifying the topology (advance: *edge collapse, edge split, edge flip*)
+  3. Simplification with quadrics
+  4. Metrics (valence, face area, face angles, curvature)
+  5. Adaptive remeshing
 
 **Project**: Remeshing
 
