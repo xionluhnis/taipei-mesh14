@@ -6,6 +6,7 @@ Slides and content for the [2014 workshop on Mesh Processing](https://www.facebo
 Structure
 ---------
 _Day 1_
+
 **Slides**: Introduction to C++
   0. History and compilation model
   1. Hello world
@@ -36,6 +37,7 @@ _Day 1_
   - Mesh visualization
 
 _Day 2_
+
 **Slides**: Remeshing with OpenMesh / OpenGP
   1. Laplacian smoothing (uniform, normal-constrained)
   2. Modifying the topology (advance: *edge collapse, edge split, edge flip*)
