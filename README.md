@@ -1,7 +1,9 @@
 Taipei Mesh 2014
 ================
 
-Slides and content for the [2014 workshop on Mesh Processing](https://www.facebook.com/groups/176534365780994/) in Taipei
+Slides and content for the [2014 workshop on Mesh Processing](https://www.facebook.com/groups/176534365780994/) in Taipei.
+
+Based on [PicoCMS](http://picocms.org/) with [YoctoManager](https://github.com/xionluhnis/yoctomanager) and [Adv-meta](https://github.com/shawnsandy/adv-meta).
 
 Structure
 ---------
@@ -58,9 +60,7 @@ _Day 2_
 
 TODO
 ----
-  - announce the structure at the beginnning of C++
-  - show examples compiled and executed in real time (out of slides!)
-  - write the slides!
-  - write the code and test on Linux+MacOSX+Windows
-  - create virtualbox environment in case people have troubles
-  - have website to host slides, project files and links (use pico + yocto)
+  - show examples compiled and executed out of slides
+  - write the slides
+  - write the project code
+  - test things
