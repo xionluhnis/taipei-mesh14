@@ -8,7 +8,7 @@ $config['base_url'] = '/workshops/taipei14'; 				// Override base URL (e.g. http
 $config['theme'] = 'mesh'; 			// Set the theme (defaults to "default")
 $config['date_format'] = 'jS M Y';		// Set the PHP date format
 $config['twig_config'] = array(			// Twig settings
-	'cache' => false, //CACHE_DIR,					// To enable Twig caching change this to CACHE_DIR
+	'cache' => CACHE_DIR,					// To enable Twig caching change this to CACHE_DIR
 	'autoescape' => false,				// Autoescape Twig vars
 	'debug' => false					// Enable Twig debug
 );
