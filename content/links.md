@@ -1,8 +1,9 @@
 /*
-      Title: links
-      Author: Alexandre Kaspar
-      Date: 2014/08/01
-     */
+Title: Links
+Author: Alexandre Kaspar
+Description: List of useful links
+Date: 2014/08/01
+*/
 
 Links
 =====
