@@ -1,0 +1,3 @@
+[submodule "plugins/yoctomanager"]
+	path = plugins/yoctomanager
+	url = https://github.com/xionluhnis/yoctomanager.git
