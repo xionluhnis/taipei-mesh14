@@ -36,6 +36,7 @@ h2 {
     color: #fff;
     padding-top: 5em;
     text-align: center;
+    background: url(../images/border-color.png) repeat-y top right;
     /* background: #2c3e50; */
 }
 
@@ -45,10 +46,12 @@ h2 {
 
 .pure-menu-custom ul {
     margin-top: 1em;
+    border-top: 2px solid #89aad7;
+    border-bottom: 2px solid #89aad7;
 }
 
 .pure-menu-custom.pure-menu-open, .pure-menu-custom.pure-menu-horizontal li .pure-menu-children {
-    background: rgba(255, 255, 255, 0.87);
+    background: rgba(255, 255, 255, 0.87) url(../images/border-white.png) repeat-y top right;
     border: none;
 }
 
