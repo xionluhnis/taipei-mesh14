@@ -31,9 +31,8 @@
                     <input type="checkbox" id="toggle" />
                     <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
                     <ul class="menu">
-                        <li><a href="{{ page.url }}">Home</a></li>
-{% for page in pages %}{% if page.in_menu %}
-                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>                         
+{% for page in pages %}{% if page.menu %}
+                        <li><a href="{{ page.url }}">{{ page.menu }}</a></li>                         
 {% endif %}{% endfor %}
                     </ul>
                 </div>

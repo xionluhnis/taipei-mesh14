@@ -19,7 +19,7 @@ h2 {
 }
 
 #page {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.87);
 }
 
 #container {  
@@ -47,7 +47,7 @@ h2 {
 }
 
 .pure-menu-custom.pure-menu-open, .pure-menu-custom.pure-menu-horizontal li .pure-menu-children {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.87);
     border: none;
 }
 
@@ -110,7 +110,7 @@ blockquote {
     }
 
     .menu > li > a {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.87);
     }
 
     #container {

@@ -1,12 +1,22 @@
 /*
-Title: Links
+Title: Useful links
 Author: Alexandre Kaspar
 Description: List of useful links
 Date: 2014/08/01
+Menu: Links
 */
 
 Links
 =====
+
+Background
+----------
+
+  - [EPFL](http://www.epfl.ch) - École Polytechnique Fédérale de Lausanne
+  - [LGG](http://lgg.epfl.ch) - Computer Graphics and Geometry Laboratory
+  - Publications on Mesh Processing:
+    - from [Bailin Deng](http://lgg.epfl.ch/~bdeng/)
+    - at [LGG](http://lgg.epfl.ch/research.php?p=9)
 
 C++
 ---
