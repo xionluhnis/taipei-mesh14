@@ -31,33 +31,34 @@
                     <input type="checkbox" id="toggle" />
                     <label for="toggle" class="toggle" data-open="Main Menu" data-close="Close Menu" onclick></label>
                     <ul class="menu">
-{% for page in pages %}{% if not(page.date) and not(page.url == base_url~'/') %}
+                        <li><a href="{{ page.url }}">Home</a></li>
+{% for page in pages %}{% if page.in_menu %}
                         <li><a href="{{ page.url }}">{{ page.title }}</a></li>                         
 {% endif %}{% endfor %}
                     </ul>
                 </div>
             </div>
-            <div class="pure-u-1">
+            <div id="page" class="pure-u-1">
                 <div id="content">
-{% if is_front_page %}
+{% if page.url == base_url~'/sitemap' %}
 {% for page in pages %}
-{% if page.date and not(page.url == base_url~'/') %}
 		    <div class="post">
 		        <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 		        <p class="meta">Published {{ page.date_formatted }}</p>
 		        <p class="excerpt">{{ page.excerpt }}</p>                
 		    </div>
-{% endif %}
 {% endfor %}
 {% else %}
-		    <div class="post">
+        <div class="post">
+            <div class="header">
 {% if meta.title %}
-		        <h2>{{ meta.title }}</h2>
+		          <h2>{{ meta.title }}</h2>
 {% endif %}
 {% if meta.date %}
-		        <p class="meta">Published {{ meta.date_formatted }}</p>
+		          <p class="meta">Published {{ meta.date_formatted }}</p>
 {% endif %}
-		        {% spaceless %}{{ content }}{% endspaceless %}
+            </div>
+            {% spaceless %}{{ content }}{% endspaceless %}
 				
 		    </div>
 {% endif %}

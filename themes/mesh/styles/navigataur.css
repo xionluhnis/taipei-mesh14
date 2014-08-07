@@ -47,10 +47,11 @@ body{ -webkit-animation: bugfix infinite 1s; }
 
 @media only screen and (max-width: 768px){
 	
+  /*
 	.menu > li > a:hover, .menu > li > a:focus{
 		background: #34495e;
         color: #1abc9c;
-	}
+	} */
 	
 	.toggle:after {
 		content: attr(data-open);

@@ -1,11 +1,13 @@
 body {
     color: #333;
     font-family: 'PT Sans', Helvetica Neue, Arial, sans-serif;
+    height: 100%;
+    background: url(../images/background.jpg) no-repeat;
 }
 
 a {
-    color: #333;
     text-decoration: none;
+    color: #89aad7;
 }
 
 h2 {
@@ -13,6 +15,11 @@ h2 {
     font-weight: 700;
     line-height: 1em;
     margin: 0;
+    border-bottom: 1px solid gray;
+}
+
+#page {
+    background: rgba(255, 255, 255, 0.7);
 }
 
 #container {  
@@ -28,7 +35,7 @@ h2 {
     color: #fff;
     padding-top: 5em;
     text-align: center;
-    background: #2c3e50;
+    /* background: #2c3e50; */
 }
 
 #content {
@@ -40,21 +47,19 @@ h2 {
 }
 
 .pure-menu-custom.pure-menu-open, .pure-menu-custom.pure-menu-horizontal li .pure-menu-children {
-    background: none;
+    background: rgba(255, 255, 255, 0.7);
     border: none;
 }
 
 .pure-menu-custom li a:hover,.pure-menu-custom li a:focus, a:hover, a:focus {
-    background: none;
-    color: #1abc9c;
-	-webkit-transition: all 0.4s linear;
-	-moz-transition: all 0.4s linear;
-	-o-transition: all 0.4s linear;
-	transition: all 0.4s linear;    
+    color: white;
+    background: #89aad7;
+    text-decoration: none;
 }
 
 .pure-menu-custom a, .pure-menu-custom .pure-menu-can-have-children>li:after {
-    color: #fff;
+    color: #89aad7;
+    font-size: 1.5em;
 }
 
 .pure-menu-custom .pure-menu-selected a {
@@ -65,9 +70,18 @@ h2 {
     margin-bottom: 2em;
     font-size: 1.5em;
 }
+.post .header {
+    background: #efefef;
+}
+.post .header h2 {
+    color: gray;
+}
 
 .post a{
     text-decoration: underline;
+}
+.post a:hover {
+    text-decoration: none;
 }
 
 .post>h2 a {
@@ -92,16 +106,22 @@ blockquote {
         width: 100%;
         position: relative;
         margin: 0;
-        background: #2c3e50;
         padding-top: 2em;
-    }    
-    
+    }
+
+    .menu > li > a {
+        background: rgba(255, 255, 255, 0.7);
+    }
+
     #container {
         padding: 0;
     }
-    
+
     .pure-menu-custom ul {
         margin-top: 0;
+    }
+    .toggle:after {
+        background: gray !important;
     }
 }
 
