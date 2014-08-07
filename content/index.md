@@ -2,7 +2,7 @@
 Title: 2014 Workshop on Mesh Processing
 Author: Alexandre Kaspar
 Description: Welcome page of the workshop
-Date: 2014/07/07
+Date: 2014/08/07
 Menu: Workshop
 */
 
@@ -39,8 +39,8 @@ Slides
 ------
 *Coming soon!*
 
-Presentators
-------------
+Presenters
+----------
   - [Bailin Deng](http://lgg.epfl.ch/~bdeng/) (lgg, epfl)
   - [Alexandre Kaspar](http://w-x.ch) (epfl)
 
