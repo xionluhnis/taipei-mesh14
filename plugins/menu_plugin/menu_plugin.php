@@ -3,22 +3,25 @@
 /**
  * The file description. *
  * @package Pico
- * @subpackage SortByMenuID
+ * @subpackage MenuPlugin
  * @version ??
  * @author Alexandre Kaspar <xion.luhnis@gmail.com>
  *
  */
-class Sort_By_MenuID {
+class Menu_Plugin {
 
     public function __construct() {
     }
 
     public function before_read_file_meta(&$headers){
+      $headers['menu'] = 'Menu';
       $headers['menu_id'] = 'MenuID';
     }
 
     public function get_page_data(&$data, $page_meta){
-      $data['menu_id'] = $page_meta['menu_id']; // transfer meta into page data
+      // transfer meta into page data
+      $data['menu'] = $page_meta['menu'];
+      $data['menu_id'] = $page_meta['menu_id'];
     }
 
     public function get_pages(&$pages, &$current_page, &$prev_page, &$next_page){

@@ -4,6 +4,7 @@ Author: Alexandre Kaspar
 Description: Welcome page of the workshop
 Date: 2014/08/07
 Menu: Workshop
+MenuID: 1
 */
 
 Mesh Processing Workshop
@@ -11,29 +12,9 @@ Mesh Processing Workshop
 
 Schedule
 --------
-**Sunday 17th**
+The workshop starts on Sunday 17th of August and goes on until the afternoon of Thursday 21st.
 
-  - Welcome
-  - Grasshopper planarization component
-
-**Monday 18th**
-
-  - Introduction to C++ with OpenFrameworks
-  - Mesh visualization with OpenMesh
-
-**Tuesday 19th**
-
-  - Remeshing
-  - Questions and projects
-
-**Wednesday 20th**
-
-  - Projects and help
-
-**Thursday 21st**
-
-  - Presentations
-  - Questions and answers
+For a detailed schedule, see [there](schedule).
 
 Slides
 ------
