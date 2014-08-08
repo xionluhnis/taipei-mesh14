@@ -1,58 +1,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Templating and classes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\pointedsl{
-	Templating
-}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Templating}
-\begin{lstlisting}
-template<typename T>
-T sum(T a, T b){
-    T c = a + b;
-    return c;
-}
-\end{lstlisting}
-\misc{
-	Function (and class) \emph{templates} provides a way to abstract the notion of type.
-	
-	Here, the type \ctext{T} is resolved by the compiler when \ctext{sum} is used.
-  It only requires an operator \ctext{+} to work${}^*$.
-}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Templating (2)}
-\begin{lstlisting}
-int c = sum(1, 2);
-float d = sum(1.0f, 2.0f);
-float e = sum<float>(1, 2.0f);
-\end{lstlisting}
-\misc{
-	The type \ctext{T} can sometimes by inferred. When it cannot, one must specify it.
-}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Templating (3)}
-\begin{lstlisting}
-template<>
-bool sum<bool>(bool a, bool b){
-    return a || b; // a or b
-}
-bool a = true, b = false;
-bool c = sum(a, b);
-// c == true
-\end{lstlisting}
-\misc{
-	Templates can be specialized for a given type.
-}
-\end{frame}
-
+%%%%% Templating %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \pointedsl{
@@ -60,6 +8,17 @@ bool c = sum(a, b);
 }
 \end{frame}
 
+% TODO
+% Content:
+% 1. Basic class usage
+% 2. Class variables & method declaration
+% 3. Class definition
+% 4. Constructor, destructor
+% 5. Accessors (public, protected, private)
+% 6. Instance and static members
+% 7. Operators and overloading
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Classes}
 \begin{lstlisting}

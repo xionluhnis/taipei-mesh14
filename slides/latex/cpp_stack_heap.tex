@@ -12,21 +12,93 @@
 % See http://gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
 % See http://www.learncpp.com/cpp-tutorial/79-the-stack-and-the-heap/
 
+% TODO
+% Content:
+% 1. Stack -vs- heap
+% 2. Stack: variable scope (when is the destructor called?)
+% 3. Heap: new & delete (and memory leaks)
+% 4. Heap: arrays with new and delete
+% 5. Smart pointers
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{References}
-\begin{lstlisting}
-// passed by reference
-void swap_ref(int &x, int &y){
-    int tmp = x;
-    x = y;
-    y = tmp;
+\frametitle{Stack -vs- heap}
+%\begin{lstlisting}
+%// passed by reference
+%void swap_ref(int &x, int &y){
+%    int tmp = x;
+%    x = y;
+%    y = tmp;
+%}
+%int a = 1, b = 2;
+%swap_ref(a, b);
+%// good! a=2, b=1
+%\end{lstlisting}
+\misc{
+	The \emph{stack} is a place where variables live and die depending on their location in the program.
+	
+	The \emph{heap} is the place where variables live (and die) independently of their location in the program.
 }
-int a = 1, b = 2;
-swap_ref(a, b);
-// good! a=2, b=1
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+\frametitle{Stack: life and death of a variable}
+\begin{lstlisting}
+int life_of_a_variable(bool b){ // b copied
+  int a = 0; // a born
+  if(b){
+    int c = 10; // c born
+    ... // do other things
+  } // c dead
+  return a; // a copied, then dead
+}
 \end{lstlisting}
 \misc{
-	\emph{References} are syntactic sugar for pointers when passing variables to functions or retrieving the value they return.
+	On the \emph{stack}, local variables die as soon as the program reaches back a level where the considered variables were not defined.
+	
+	They die with the call of their \emph{destructor}.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Heap: \ctext{new} and \ctext{delete}}
+%\begin{lstlisting}
+%// passed by reference
+%void swap_ref(int &x, int &y){
+%    int tmp = x;
+%    x = y;
+%    y = tmp;
+%}
+%int a = 1, b = 2;
+%swap_ref(a, b);
+%// good! a=2, b=1
+%\end{lstlisting}
+\misc{
+	Variables that are \emph{returned} by a function do not access a level back, they are \emph{copied} to the location where they are returned.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Heap: arrays with \ctext{new[]} and \ctext{delete[]}}
+
+\misc{
+	The \emph{stack} is a place where variables live and die depending on their location in the program.
+	
+	The \emph{heap} is the place where variables live (and die) independently of their location in the program.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Smart pointers}
+
+\misc{
+	The \emph{stack} is a place where variables live and die depending on their location in the program.
+	
+	The \emph{heap} is the place where variables live (and die) independently of their location in the program.
 }
 \end{frame}
