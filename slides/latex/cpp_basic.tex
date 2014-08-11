@@ -60,7 +60,7 @@ int z = (y - 2) * x; // z equals 42
 \misc{
 	Fundamental types include:
 	\begin{itemize}
-		\item \textbf{Integer types}: \ctext{char}${}^{(*)}$, \ctext{short}, \ctext{int}, \ctext{long} (each \ctext{signed} or \ctext{unsigned})
+		\item \textbf{Integer types}: \ctext{char}${}^{(*)}$, \ctext{short}, \ctext{int}, \ctext{long} \\(each in \ctext{signed} or \ctext{unsigned} version)
 		\item \textbf{Floating point types}: \ctext{float}, \ctext{double}
 		\item \textbf{Boolean type:} \ctext{bool}
 	\end{itemize}
@@ -77,11 +77,66 @@ char c = 'a'; double pi = 3.14159;
 \begin{center}
 \includegraphics[width=0.6\textwidth]{figures/bits}
 \end{center}
+\lstset{
+	xleftmargin=3cm
+}
 \begin{lstlisting}
 int i = 1;
 char c = '1';
 float f = 1.0f;
 \end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Operators}
+\misc{
+	Each type has a set of (unary and binary) \textbf{operators}.
+}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+// arithmetic
+// for numbers
++ - * / %
+// bitwise
+// for integers
+& | ^ ~ >> <<
+// incr- decrement
+// for integers
+++ --
+\end{lstlisting}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+// comparison
+// producing bool
+== != < <= > >=
+// logical
+// for bool
+! || &&
+// accessors
+. :: * & ->
+, [] ()
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Operators}
+\misc{
+	When creating new types, one can overload the operator's behavior.
+}
+\begin{lstlisting}
+std::cout << "Hello world!\n";
+int input_number;
+std::cin >> input_number;
+\end{lstlisting}
+\misc{
+	For example, \ctext{Stream} objects use \ctext{<<} and \ctext{>>} as
+	output and input operators.
+}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
