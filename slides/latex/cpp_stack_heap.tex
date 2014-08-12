@@ -52,32 +52,85 @@ int life_of_a_variable(bool b){ // b born
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{frame}[fragile]
-\frametitle{Heap: \ctext{new} and \ctext{delete}}
-%\begin{lstlisting}
-%// passed by reference
-%void swap_ref(int &x, int &y){
-%    int tmp = x;
-%    x = y;
-%    y = tmp;
-%}
-%int a = 1, b = 2;
-%swap_ref(a, b);
-%// good! a=2, b=1
-%\end{lstlisting}
+\frametitle{Using the stack}
+\begin{center}
+\B
+\begin{tabular}{ll}
+\B \textbf{Pro} & \B \textbf{Contra} \\\hline
+\B Fast access & \B \ctext{return} requires a copy \\
+\B Managed life-cycle & \B Limited memory
+\end{tabular}
+\end{center}
 \misc{
-	Variables that are \emph{returned} by a function do not access a level back, they are \emph{copied} to the location where they are returned.
+	The stack should be reserved for \textbf{simple} and \textbf{local} variables.
+	
+	\textbf{Heavy} or \textbf{complex} variables should be allocated on the heap.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\lstset{ numbers=none }
+\frametitle{Heap: \ctext{new} and \ctext{delete}}
+\begin{lstlisting}
+// forward-declaration
+class User; // with complex data
+
+User *myself = new User("Alex");
+// use myself, possibly return
+//     from a function
+// eventually delete:
+delete myself;
+\end{lstlisting}
+\misc{
+	Using \ctext{new} enforces that the variable is created on the heap.
+	
+	Instances created on the heap are not deleted automatically, the programmer must use \ctext{delete} on these instances to free the memory.
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\lstset{ numbers=none }
+\frametitle{Heap: \ctext{new} and \ctext{delete}}
+\begin{lstlisting}
+struct Image {
+  int x, y;
+  ...
+  void resize(Size newSize);
+};
+
+Image *img = new Image;
+img->x = 10; // same as (*img).x
+img->y = 10; // same as (*img).y
+img->resize(100, 100);
+\end{lstlisting}
+\misc{
+	Instances on the heap are dealt with using pointers.
+	
+	Accessing their members is done using the \ctext{->} operator.
 }
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Heap: arrays with \ctext{new[]} and \ctext{delete[]}}
-
+\begin{lstlisting}
+// fibonacci sequence
+int *fibSequence(int N){
+  int *seq = new int[N];
+  seq[0] = seq[1] = 1;
+  for(int i = 2; i < N; ++i)
+    seq[i] = seq[i-1] + seq[i-2];
+  return seq;
+}
+\end{lstlisting}
 \misc{
-	The \emph{stack} is a place where variables live and die depending on their location in the program.
+	Creating arrays on the heap (especially any array of variable size) is done using
+	the \ctext{new[]} operator.
 	
-	The \emph{heap} is the place where variables live (and die) independently of their location in the program.
+	Freeing uses the corresponding \ctext{delete[]} operator.
 }
 \end{frame}
 

@@ -31,6 +31,9 @@ static_id: static_id.cpp
 stack_life: stack_life.cpp
 	g++ stack_life.cpp -o stack_life
 
+heap_fibseq: heap_fibseq.cpp
+	g++ heap_fibseq.cpp -o heap_fibseq
+
 clean:
 	rm -f helloworld
 	rm -f basic_variables
@@ -43,3 +46,4 @@ clean:
 	rm -f swap_ref
 	rm -f static_id
 	rm -f stack_life
+	rm -f heap_fibseq
