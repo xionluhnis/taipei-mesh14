@@ -15,8 +15,8 @@
 % 3. Expressions (unary, binary, arithmetic, comparator, bitwise)
 % 4. Conditions (if, else if, else)
 % 5. Loops (for, while, do while)
-% 6. Functions (declaration, definition, signature /!\ types -> diff fun)
-% 7. Arrays
+% 6. Arrays
+% 7. Functions (declaration, definition, signature /!\ types -> diff fun)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lstset{numbers=none}
@@ -140,50 +140,190 @@ std::cin >> input_number;
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\lstset{language=C++,numbers=none}
 \begin{frame}[fragile]
-\frametitle{Declaration and definition}
+\frametitle{Sequential flow}
+\misc{
+	The simplest programs are \textbf{sequential}: they execute a sequence of statements in the order they are written.
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Sequential flow}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow}
+  \end{column}
+  \begin{column}{0.5\textwidth}
 \begin{lstlisting}
-void process(int x); // declare a function
-int x; // declare a variable
-x = 10; // assign a value
-process(x);
-// declaration and definition
-int sum(int a, int b){ return a + b; }
-// declaration and assignment
-int y = sum(x, 2);
+statement_1;
+statement_2;
+...
+statement_N;
+
+// Question:
+// How to act
+// according to
+// the input?
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Sequential flow}
+\misc{
+	The two main ways of breaking this sequential behavior are
+	\begin{enumerate}
+		\item \textbf{conditions} that execute statements only if a condition is met (or not) and
+		\item \textbf{loops} that repeatedly execute statements until a specific state is reached (modeled as a condition).
+	\end{enumerate}
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Conditional flow}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow-ifthen}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+if( test ){
+  true_block;
+}
+
+// Question:
+// Special action
+// when the test
+// fails?
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Conditional flow}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow-ifelse}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+if( test ){
+  true_block;
+} else {
+  else_block;
+}
+
+// Note:
+// Can be chained
+// using
+// else if(test)
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Iterative flow: do-while}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow-do}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+do {
+  body;
+} while( test );
+
+// Question:
+// How to check
+// the test
+// before body?
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Iterative flow: while-loop}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow-while}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+while(test){
+  body;
+}
+
+// e.g.
+while(i > 0){
+  ...
+  --i;
+}
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Iterative flow: for-loop}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+  \hfill
+\includegraphics[scale=0.5]{figures/flow-for}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+// for (a; b; c){}
+for(init;
+    test;
+    incr){
+  body;
+}
+
+// e.g.
+for(int i = 0;
+    i < 5; ++i){
+  // loops 5 times
+}
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Loops, variables \& indexing}
+\misc{
+	Loops are important when processing a lot of similar data.
+}
+\begin{lstlisting}
+int N = 0;
+for(int i = 1; i < 100; ++i){
+  N += i; // sum from 1 to 100
+}
 \end{lstlisting}
 \misc{
-	Every variable, type or function must be declared before being used. They can then be defined anywhere.
-	
-	\textbf{Note}: variables automatically receive a default value corresponding to $0$.
+	Here \ctext{N} refers to the same location
+	whatever the value of \ctext{i}. What if we
+	want a variable that depends on \ctext{i}?
 }
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]
-\frametitle{Flow control}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{figures/flow}
-\end{center}
-\misc{
-	The usual conditional blocks are available
-	\begin{itemize}
-		\item \ctext{if}, \ctext{else if}, \ctext{else} and \ctext{switch}
-	\end{itemize}
-	as well as loop structures
-	\begin{itemize}
-		\item \ctext{for}, \ctext{while} and \ctext{do while}
-	\end{itemize}
-}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Arrays}
 \begin{columns}[c]
   \begin{column}{0.5\textwidth}
-\lstset{language=C++,numbers=left}
+\lstset{numbers=left}
 \begin{lstlisting}
 int a[3] = { 1, 0 };
 a[1] = 42;
@@ -196,5 +336,81 @@ a[1] = 42;
 \end{columns}
 \misc{
 	\emph{Arrays} are continuous blocks of memory that store multiple elements of a same type. They use $0$-based indexing.
+	
+	They are the storage of choice for multiple instances of a data type.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Functions}
+\misc{
+	Functions are pieces of program that can be executed as a whole.
+}
+\begin{lstlisting}
+// How to get sum of integers
+// from A to B?
+int sum = 0;
+for(int i = A; i <= B; ++i)
+  sum += i;
+  
+// and from C to D?
+// Copy code again?
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Functions}
+\begin{lstlisting}
+int intSum(int A, int B){
+  int sum = 0;
+  for(int i = A; i <= B; ++i)
+    sum += i;
+  return sum;
+}
+\end{lstlisting}
+\misc{
+	Here \ctext{intSum} is a function that:
+	\begin{itemize}
+		\item takes two integer arguments \ctext{A} and \ctext{B}
+		\item return the sum of integers between \ctext{A} and \ctext{B}
+	\end{itemize}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Functions}
+\begin{lstlisting}
+// declare function
+// (define it somewhere else)
+int intSum(int, int);
+
+// use function
+int x = intSum(0, 100);
+int y = x + intSum(101, 200);
+// y == intSum(0, 200)
+\end{lstlisting}
+\misc{
+	Functions must be \textbf{declared} before being used
+	just like variables.
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Functions}
+\begin{lstlisting}
+// /!\ different functions
+int intSum(int, int);
+int intSum(float);
+
+// redeclare
+int intSum(int x, int y);
+// Note: argument names
+// are irrelevant
+\end{lstlisting}
+\misc{
+	They can be declared multiple times
+	as long as the signature (name + types)
+	match.
 }
 \end{frame}
