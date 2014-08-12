@@ -13,9 +13,25 @@ basic_intsum: basic_intsum.cpp
 random_bits: random_bits.cpp
 	g++ random_bits.cpp -o random_bits
 
+swap_wrong: swap_wrong.cpp
+	g++ swap_wrong.cpp -o swap_wrong
+
+swap_wrong_debug: swap_wrong_debug.cpp
+	g++ swap_wrong_debug.cpp -o swap_wrong_debug
+
+swap_ptr: swap_ptr.cpp
+	g++ swap_ptr.cpp -o swap_ptr
+
+swap_ref: swap_ref.cpp
+	g++ swap_ref.cpp -o swap_ref
+
 clean:
 	rm -f helloworld
 	rm -f basic_variables
 	rm -f basic_types
 	rm -f basic_intsum
 	rm -f random_bits
+	rm -f swap_wrong
+	rm -f swap_wrong_debug
+	rm -f swap_ptr
+	rm -f swap_ref
