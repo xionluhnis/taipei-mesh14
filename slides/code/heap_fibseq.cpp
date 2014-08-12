@@ -22,5 +22,7 @@ int main(int argc, char **argv){
   for(int i = 0; i < N; ++i){
     std::cout << "fib(" << i << ") = " << seq[i] << "\n";
   }
+  // free sequence
+  delete[] seq;
   return 0;
 }

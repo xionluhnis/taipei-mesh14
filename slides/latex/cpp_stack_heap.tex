@@ -59,14 +59,16 @@ int life_of_a_variable(bool b){ // b born
 \B
 \begin{tabular}{ll}
 \B \textbf{Pro} & \B \textbf{Contra} \\\hline
-\B Fast access & \B \ctext{return} requires a copy \\
-\B Managed life-cycle & \B Limited memory
+\B Very fast access & \B \ctext{return} requires a copy \\
+\B Managed life-cycle & \B Limited available memory \\
+\B No memory fragmentation & \B Fixed-size arrays \\
+\B & \B No re-allocation
 \end{tabular}
 \end{center}
 \misc{
 	The stack should be reserved for \textbf{simple} and \textbf{local} variables.
 	
-	\textbf{Heavy} or \textbf{complex} variables should be allocated on the heap.
+	\textbf{Heavy} or \textbf{size-varying} variables should be allocated on the heap.
 }
 \end{frame}
 
@@ -137,10 +139,30 @@ int *fibSequence(int N){
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Smart pointers}
+\begin{lstlisting}
+#include<memory>
+struct point {
+  int x, y;
+  point(int, int);
+};
 
+std::auto_ptr<point> ptr(new point(1, 2));
+// no need to use delete!
+\end{lstlisting}
 \misc{
-	The \emph{stack} is a place where variables live and die depending on their location in the program.
-	
-	The \emph{heap} is the place where variables live (and die) independently of their location in the program.
+	Smart pointers are classes that wrap pointers and take care of the deallocation automatically.
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Smart pointers}
+\misc{
+	Various flavors exist including
+	\begin{itemize}
+		\item \ctext{scoped\_ptr}: single instance that dies like a stack variable, and cannot be copied anywhere else
+		\item \ctext{auto\_ptr}: single instance that dies like stack variables, but can be copied somewhere else
+		\item \ctext{shared\_ptr}: pointer that is used at multiple locations, uses reference counting to die when there is no reference anymore
+		\item \ctext{weak\_ptr}: instance similar to the shared version, but without reference count, and whose content may not exist anymore if the other instances all died
+	\end{itemize}
 }
 \end{frame}
