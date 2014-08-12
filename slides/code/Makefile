@@ -28,6 +28,9 @@ swap_ref: swap_ref.cpp
 static_id: static_id.cpp
 	g++ static_id.cpp -o static_id
 
+stack_life: stack_life.cpp
+	g++ stack_life.cpp -o stack_life
+
 clean:
 	rm -f helloworld
 	rm -f basic_variables
@@ -39,3 +42,4 @@ clean:
 	rm -f swap_ptr
 	rm -f swap_ref
 	rm -f static_id
+	rm -f stack_life

@@ -8,7 +8,7 @@
 }
 \end{frame}
 
-% TODO
+%
 % Content:
 % 1. Basic class usage
 % 2. Class variables & method declaration
@@ -177,6 +177,8 @@ b.val[0] = 1;
 	Normal variable and methods are relative to the instance of the class that stores them.
 	
 	The keyword \ctext{static} can be used to declare variables or methods that are relative to the namespace of the class, shared by all instances.
+	
+	Accessing and using static members is done using the namespace operator \ctext{::}.
 }
 \end{frame}
 
@@ -201,54 +203,22 @@ id a, b;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{Classes (2)}
+\frametitle{Operators}
 \begin{lstlisting}
-// definitions
-template <typename T, int dim>
-T vec<T, dim>::sqLength() {
-    T sum = 0;
-    for(int i = 0; i < dim; ++i)
-        sum += val[i] * val[i];
-    return sum;
-}
+struct vec {
+  int x, y;
+  vec operator +(const vec &v) const {
+    return vec(x + v.x, y + v.y);
+  }
+};
+
+vec a, b;
+...
+vec c = a + b;
 \end{lstlisting}
 \misc{
-	Member definitions can be done separately.
+	Operators can be overloaded to produce cleaner code.
 	
-	Typically, the declaration would be in a \ctext{.h} file and the definition in a \ctext{.cpp} file.
+	Beware of the excess!
 }
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Classes (3)}
-\begin{lstlisting}
-// type alias
-typedef vec<float, 2> vec2f;
-
-// class usage
-vec2f a = vec2f::constant(2); // (2, 2)
-float d = a.sqLength(); // d=8
-\end{lstlisting}
-\misc{
-	Static properties and methods are called with the namespace operator (\ctext{::}) whereas
-	instance members are accessed using the dot operator.
-}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Operator overloading}
-\begin{lstlisting}
-vec2f operator +(const vec2f &v1,
-                 const vec2f &v2){
-    vec2f x;
-    for(int i = 0; i < 2; ++i)
-        x.val[i] = v1.val[i] + v2.val[i];
-    return x;
-}
-
-// usage
-vec2f a, b;
-// hidden: initialization of a and b
-vec2f c = a + b;
-\end{lstlisting}
 \end{frame}

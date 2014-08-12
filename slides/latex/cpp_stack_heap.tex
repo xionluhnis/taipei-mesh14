@@ -12,7 +12,7 @@
 % See http://gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
 % See http://www.learncpp.com/cpp-tutorial/79-the-stack-and-the-heap/
 
-% TODO
+%
 % Content:
 % 1. Stack -vs- heap
 % 2. Stack: variable scope (when is the destructor called?)
@@ -23,17 +23,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Stack -vs- heap}
-%\begin{lstlisting}
-%// passed by reference
-%void swap_ref(int &x, int &y){
-%    int tmp = x;
-%    x = y;
-%    y = tmp;
-%}
-%int a = 1, b = 2;
-%swap_ref(a, b);
-%// good! a=2, b=1
-%\end{lstlisting}
 \misc{
 	The \emph{stack} is a place where variables live and die depending on their location in the program.
 	
@@ -46,14 +35,14 @@
 \begin{frame}[fragile]
 \frametitle{Stack: life and death of a variable}
 \begin{lstlisting}
-int life_of_a_variable(bool b){ // b copied
+int life_of_a_variable(bool b){ // b born
   int a = 0; // a born
   if(b){
     int c = 10; // c born
     ... // do other things
   } // c dead
   return a; // a copied, then dead
-}
+} // b dead
 \end{lstlisting}
 \misc{
 	On the \emph{stack}, local variables die as soon as the program reaches back a level where the considered variables were not defined.
