@@ -20,23 +20,186 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
-\frametitle{Classes}
+\frametitle{Basic class usage}
 \begin{lstlisting}
-// declaration
-template <typename T, int dim>
-struct vec {
-    typedef vec<T, dim> this_type;
-    T val[dim];
-    vec(T a, T b);
-    T sqLength() const;
-    static this_type constant(T a);
-};
+struct point {
+  int x, y;
+}; // don't forget ;
+
+point p1, p2;
+p1.x = 1;
+p1.y = 2;
+p2 = p1; // copy
+p2.y = 2;
 \end{lstlisting}
 \misc{
-	Classes (keyword \ctext{class}) and structures (keyword \ctext{struct}) describe custom types made of properties (\ctext{val}) and methods (\ctext{sqLength}).
+	Classes (keyword \ctext{class}) and structures (keyword \ctext{struct}) describe custom types made of properties (here \ctext{x} and \ctext{y}).
 }
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Class member declaration}
+\begin{lstlisting}
+// declaration
+struct vec {
+    float val[2]; // variable
+    // instance method:
+    float sqLength() const;
+    // static method:
+    static vec constant(float a);
+};
+\end{lstlisting}
+\misc{
+	They can have specific methods (\ctext{sqLength}, \ctext{constant}).
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Class definition}
+\begin{lstlisting}
+// definition
+float vec::sqLength() {
+    float sum = 0;
+    for(int i = 0; i < dim; ++i)
+        sum += val[i] * val[i];
+    return sum;
+}
+\end{lstlisting}
+\misc{
+	The methods can be defined outside of the declaration.
+	
+	The usual pattern is:
+	\begin{itemize}
+		\item declare class in \ctext{classname.h}
+		\item define class in \ctext{classname.cpp}
+	\end{itemize}
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Constructors and destructor}
+\misc{
+	Some methods are special, including
+	\begin{itemize}
+		\item the \textbf{default constructor} which is called for instances without specific initialization
+		\item the \textbf{copy constructor} which is used for passing argument by value and when assigning a copy of a variable to a new variable
+		\item the \textbf{destructor} which is called when the instance is deleted
+	\end{itemize}
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Instance creation}
+\begin{lstlisting}
+struct point {
+  int x, y;
+
+  point(int a, int b); // my constructor
+  point(); // default constructor
+  point(const point &p); // copy constructor
+  ~point(); // destructor
+};
+
+point a(1, 2); // my constructor
+point b; // default constructor
+point c(a); // copy constructor
+// assignment using copy constructor
+point d = e;
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Accessors}
+\misc{
+	Members of classes can be 
+	\begin{itemize}
+		\item \ctext{public}: can be accessed from everywhere, 
+		\item \ctext{protected}: can only be accessed by classes that extend it, or 
+		\item \ctext{private}: can only be accessed by methods of that instance
+	\end{itemize}
+	
+	By default, \ctext{struct}'s have every member \ctext{public} whereas \ctext{class}'es use the default accessor \ctext{private}.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Accessors}
+\lstset{
+  xrightmargin=0cm
+}
+\begin{columns}[c]
+  \begin{column}{0.5\textwidth}
+\begin{lstlisting}
+struct point {
+  int x, y;
+  void print();
+private:
+  void debug();
+};
+
+// ok:
+point a;
+a.print();
+// error:
+a.debug();
+\end{lstlisting}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\lstset{ numbers=none, xleftmargin=0cm }
+\begin{lstlisting}
+class vec {
+  int val[2];
+public:
+  vec(int a, int b);
+  int sqLength();
+};
+
+// ok:
+vec b(1, 2);
+int l = b.sqLength();
+// error:
+b.val[0] = 1;
+\end{lstlisting}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Static members}
+\misc{
+	Normal variable and methods are relative to the instance of the class that stores them.
+	
+	The keyword \ctext{static} can be used to declare variables or methods that are relative to the namespace of the class, shared by all instances.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Static members}
+\begin{lstlisting}
+struct id {
+  const int value;
+  id() : value(num++){}
+  int count() { return num; }
+private:
+  static int num;
+}
+int id::num = 0;
+
+id a, b;
+// a.value == 0, b.value == 1
+// a.count() == b.count() == 2
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Classes (2)}
 \begin{lstlisting}

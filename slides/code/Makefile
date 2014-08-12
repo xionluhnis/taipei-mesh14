@@ -25,6 +25,9 @@ swap_ptr: swap_ptr.cpp
 swap_ref: swap_ref.cpp
 	g++ swap_ref.cpp -o swap_ref
 
+static_id: static_id.cpp
+	g++ static_id.cpp -o static_id
+
 clean:
 	rm -f helloworld
 	rm -f basic_variables
@@ -35,3 +38,4 @@ clean:
 	rm -f swap_wrong_debug
 	rm -f swap_ptr
 	rm -f swap_ref
+	rm -f static_id
