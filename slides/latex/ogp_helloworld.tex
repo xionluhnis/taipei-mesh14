@@ -2,9 +2,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Traversing a mesh %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fbckg{backgrounds/blank2}
+\setbeamercolor{frametitle}{fg=gray}
 \begin{frame}
 \pointedsl{
-	Hello world
+	Using OpenGP
 }
 \end{frame}
 
@@ -30,14 +32,14 @@ mesh.write("myfile_processed.obj");
 \begin{frame}
 \frametitle{Processing}
 \misc{
-	Reading and writing meshes is simple.
+	Reading and writing meshes is easy.
 	
-	Processing them is also simple. We will cover
+	Processing them is also easy. We will cover
 	\begin{enumerate}
-		\item Methods to access connected elements\\(i.e. edges, faces, vertices and their neighborhood)
-		\item Ways to traverse a mesh (all faces, all boundary edges, all vertices around one vertex, etc.)
-		\item How to store data on the mesh elements
-		\item Topological changes (adding, deleting elements)
+		\item Methods to \textbf{access connected elements}\\(i.e. edges, faces, vertices and their neighborhood)
+		\item Ways to \textbf{traverse a mesh} (all faces, all boundary edges, all vertices around one vertex, etc.)
+		\item How to \textbf{store data} on the mesh elements
+		\item How to change the \textbf{topology} (add, delete elements)
 	\end{enumerate}
 }
 \end{frame}

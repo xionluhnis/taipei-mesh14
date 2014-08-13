@@ -12,13 +12,10 @@
 
 %
 % Content:
-% 1. Variables (declaration, assignment, operations)
-% 2. Types (list: char, short, int, float, double, bool, void; typedef)
-% 3. Expressions (unary, binary, arithmetic, comparator, bitwise)
-% 4. Conditions (if, else if, else)
-% 5. Loops (for, while, do while)
-% 6. Arrays
-% 7. Functions (declaration, definition, signature /!\ types -> diff fun)
+% 1. What is a half-edge?
+% 2. How are elements connected?
+% 3. How do I work with half-edges?
+% 4. How do I work with vertices? faces? edges?
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -29,12 +26,13 @@
 \misc{
 	Meshes are made of \emph{vertices}, \emph{edges} and \emph{faces}.
 	
-	Here, each edge is made of two half-edges (directed edges).
+	Here, each edge is made of two \textbf{half-edges} (directed edges).
 }
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Half-edges connectivity}
+\frametitle{Connectivity}
 \begin{columns}[c]
   \begin{column}{0.4\textwidth}
 \includegraphics[width=\textwidth]{figures/halfedge-connectivity}
@@ -51,11 +49,13 @@
 		\item[\color{black}\textbullet] An incident face
 		\item[\color{black}\textbullet] An opposite half-edge\\(on the same edge)
 	\end{itemize}
+	\item[\color{black}\textbullet] Each \textbf{edge} has two corresponding half-edges
 \end{itemize}
   \end{column}
 \end{columns}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Half-edges code}
 \begin{columns}[c]
@@ -86,18 +86,42 @@ Vertex v0, v1;
 
 \begin{frame}[fragile]
 \frametitle{Half-edges code}
+\lstset{ numbers=none }
 \begin{lstlisting}
 // next half-edge
-h0 = mesh.next_halfedge_handle(h);
+h0 = mesh.next_halfedge(h);
 // previous half-edge
-h1 = mesh.prev_halfedge_handle(h);
+h1 = mesh.prev_halfedge(h);
 // opposite half-edge
-h2 = mesh.opposite_halfedge_handle(h);
+h2 = mesh.opposite_halfedge(h);
 // incident face
-f = mesh.face_handle(h);
+f = mesh.face(h);
 // vertex at source
-v0 = mesh.from_vertex_handle(h);
+v0 = mesh.from_vertex(h);
 // vertex pointed by h
-v1 = mesh.to_vertex_handle(h);
+v1 = mesh.to_vertex(h);
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Vertices, edges and faces}
+\lstset{ numbers=none }
+\begin{lstlisting}
+// half-edge h of vertex v
+h = mesh.halfedge(v);
+
+// edge e of half-edge h
+e = mesh.edge(h);
+// half-edges h0,h1 from edge e
+h0 = mesh.halfedge(e, 0);
+h1 = mesh.halfedge(e, 1);
+
+// half-edge h of face f
+h = mesh.halfedge(f);
+
+// checking if at the boundary
+// same for h, e, f, v
+bool b = mesh.is_boundary(h);
 \end{lstlisting}
 \end{frame}
