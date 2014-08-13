@@ -1,0 +1,43 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Traversing a mesh %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\pointedsl{
+	Hello world
+}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{IO code}
+\begin{lstlisting}
+ // create empty mesh
+Surface_mesh mesh;
+
+// load .obj / .stl / .off
+mesh.read("myfile.obj");
+
+// process the mesh
+// ...
+
+// write the mesh to a file
+mesh.write("myfile_processed.obj");
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}
+\frametitle{Processing}
+\misc{
+	Reading and writing meshes is simple.
+	
+	Processing them is also simple. We will cover
+	\begin{enumerate}
+		\item Methods to access connected elements\\(i.e. edges, faces, vertices and their neighborhood)
+		\item Ways to traverse a mesh (all faces, all boundary edges, all vertices around one vertex, etc.)
+		\item How to store data on the mesh elements
+		\item Topological changes (adding, deleting elements)
+	\end{enumerate}
+}
+\end{frame}
