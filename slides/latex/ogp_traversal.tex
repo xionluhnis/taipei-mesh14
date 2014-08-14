@@ -1,33 +1,31 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Storing data on the mesh %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Traversing a mesh %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fbckg{backgrounds/blank2}
-\setbeamercolor{frametitle}{fg=gray}
 \begin{frame}
 \pointedsl{
-	Properties
+	Exploration
 }
 \end{frame}
 
 % TODO
 % Content:
-% 1. Creating a property (vertex, half-edge, edge, face)
-% 2. Accessing, updating property (per vertex, half-edge, edge, face)
-% 3. Example: v:point ... finding the barycenter
-% 4. Example: v:color ... coloring mesh vertices
+% 1. Iterators (vertex, edges, half-edges, faces)
+% 2. Manual: looping over the boundary
+% 3. Manual: looping over edges/vertices of a face
+% 4. Manual: 1-ring vertex traversal
+% 5. Circulators (vertex, edges, half-edges, faces)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Properties}
+\frametitle{Half-edges}
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{figures/halfedge-connectivity}
+\end{center}
 \misc{
-	\textbf{Properties} of any kind (use of template) can be associated to
-	\emph{vertices}, \emph{half-edges}, \emph{edges} or \emph{faces}.
+	Meshes are made of \emph{vertices}, \emph{edges} and \emph{faces}.
 	
-	\begin{enumerate}
-		\item How do we create them?
-		\item How do we access them?
-	\end{enumerate}
+	Here, each edge is made of two half-edges (directed edges).
 }
 \end{frame}
 
