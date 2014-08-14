@@ -101,7 +101,6 @@ v1 = mesh.to_vertex(h);
 \end{lstlisting}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
 \frametitle{Vertices, edges and faces}
 \lstset{ numbers=none }
@@ -121,5 +120,29 @@ h = mesh.halfedge(f);
 // checking if at the boundary
 // same for h, e, f, v
 bool b = mesh.is_boundary(h);
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\framedsl{
+	Typedef!?
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\misc{
+	It creates a new name for a given type.
+	
+	Useful, especially when types are getting long and complex as
+	it will be the case through these slides.
+}
+\lstset{ numbers=none }
+\begin{lstlisting}
+typedef my_long_complex_type new_type;
+
+my_long_complex_type a;
+// now equivalent to
+new_type a;
 \end{lstlisting}
 \end{frame}
