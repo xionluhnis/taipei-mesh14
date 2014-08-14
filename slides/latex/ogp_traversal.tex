@@ -12,9 +12,8 @@
 % Content:
 % 1. Iterators (vertex, edges, half-edges, faces)
 % 2. Manual: looping over the boundary
-% 3. Manual: looping over edges/vertices of a face
-% 4. Manual: 1-ring vertex traversal
-% 5. Circulators (vertex, edges, half-edges, faces)
+% 3. Manual: 1-ring vertex traversal
+% 4. Circulators (vertex, edges, half-edges, faces)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[fragile]
@@ -35,17 +34,15 @@ for(vit = mesh.vertices_begin(),
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Iterators and ordering}
+\frametitle{Iterators}
 \begin{lstlisting}
-// iterating over all half-edges
+// iterating over all XXX
 Surface_mesh::Halfedge_iterator hit;
 hit = mesh.halfedges_begin();
 
-// iterating over all edges
 Surface_mesh::Edge_iterator eit;
 eit = mesh.edges_begin();
 
-// iterating over all faces
 Surface_mesh::Face_iterator fit;
 fit = mesh.faces_begin();
 \end{lstlisting}
@@ -55,83 +52,106 @@ fit = mesh.faces_begin();
 }
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Iterators}
-\begin{center}
-	\includegraphics[width=0.5\textwidth]{figures/halfedge-connectivity}
-\end{center}
-\misc{
-	Meshes are made of \emph{vertices}, \emph{edges} and \emph{faces}.
-	
-	Here, each edge is made of two half-edges (directed edges).
+\framedsl{
+	Iterating regions?
 }
 \end{frame}
 
 \begin{frame}
-\frametitle{Half-edges connectivity}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-connectivity}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-\begin{itemize}
-	\color{black}
-	\item[\color{black}\textbullet] Each \textbf{vertex} is linked to an outgoing half-edge
-	\item[\color{black}\textbullet] Each \textbf{face} is linked to an incident half-edge
-	\item[\color{black}\textbullet] Each \textbf{half-edge} has \begin{itemize}
-		\color{black}
-		\item[\color{black}\textbullet] A next and previous half-edge
-		\item[\color{black}\textbullet] A target vertex it points to
-		\item[\color{black}\textbullet] An incident face
-		\item[\color{black}\textbullet] An opposite half-edge\\(on the same edge)
-	\end{itemize}
-\end{itemize}
-  \end{column}
-\end{columns}
+\frametitle{The boundary -vs- inside}
+\begin{center}
+	\includegraphics[width=0.42\textwidth]{figures/halfedges-boundaries}
+\end{center}
+\misc{
+	Using half-edge connectivity, it is easy to traverse a face.
+	
+	If a half-edge is on the boundary side (it has no face linked to it),
+	then this results in going over the whole boundary.
+}
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Half-edges code}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-queries}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-  \lstset{ 
-  	numbers=none, 
-  	xleftmargin=0cm, 
-  	xrightmargin=0cm
-  }
+\frametitle{The boundary -vs- inside}
 \begin{lstlisting}
-using Surface_mesh::Halfedge;
-using Surface_mesh::Face;
-using Surface_mesh::Vertex;
+Surface_mesh::Halfedge ho, h;
 
-// the starting half-edge
-Halfedge h;
-// the connected elements
-Halfedge h0, h1, h2;
-Face f;
-Vertex v0, v1;
+// traversing the boundary
+h = ho;
+do {
+  // use h
+  h = mesh.next_halfedge(h);
+} while(h != ho);
 \end{lstlisting}
-  \end{column}
-\end{columns}
+\misc{
+	Replace \ctext{ho} by \ctext{hi} to traverse the half-edges of a face.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Vertex 1-ring}
+\begin{center}
+	\includegraphics[width=0.42\textwidth]{figures/vertex-1ring}
+\end{center}
+\misc{
+	Using half-edge connectivity, it is easy to traverse the \textbf{1-ring} neighborhood
+	of a vertex \ctext{c}.
+}
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Half-edges code}
+\frametitle{Vertex 1-ring}
 \begin{lstlisting}
-// next half-edge
-h0 = mesh.next_halfedge_handle(h);
-// previous half-edge
-h1 = mesh.prev_halfedge_handle(h);
-// opposite half-edge
-h2 = mesh.opposite_halfedge_handle(h);
-// incident face
-f = mesh.face_handle(h);
-// vertex at source
-v0 = mesh.from_vertex_handle(h);
-// vertex pointed by h
-v1 = mesh.to_vertex_handle(h);
+Surface_mesh::Vertex c, v;
+Surface_mesh::Halfedge h, h0;
+
+// traversing the 1-ring
+h = h0 = mesh.halfedge(c);
+do {
+  // get vertex
+  v = mesh.to_vertex(h);
+  // get next half-edge
+  h = mesh.opposite_halfedge(h);
+  h = mesh.next_halfedge(h);
+} while(h != ho);
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Circulators}
+\misc{
+	These kinds of local region iterations are so common that there are a special kind of iterators called \textbf{circulators} which take care of such operations:
+	\begin{itemize}
+		\item \ctext{Vertex\_around\_vertex\_circulator}
+		\item \ctext{Halfedge\_around\_vertex\_circulator}
+		\item \ctext{Face\_around\_vertex\_circulator}
+		\item \ctext{Vertex\_around\_face\_circulator}
+		\item \ctext{Halfedge\_around\_face\_circulator}
+	\end{itemize}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Vertex 1-ring}
+\begin{lstlisting}
+typedef Surface_mesh Mesh;
+Mesh::Vertex c, v;
+Mesh::Vertex_around_vertex_circulator 
+    vit, vit_end;
+
+vit = vit_end = mesh.vertices(c);
+do {
+  v = *vit;
+  // use 1-ring vertex
+} while(++vit != vit_end);
+
+// similarly with
+// - mesh.halfedges(v);
+// - mesh.faces(v);
+// - mesh.vertices(f);
+// - mesh.halfedges(f);
 \end{lstlisting}
 \end{frame}

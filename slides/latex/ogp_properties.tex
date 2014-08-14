@@ -10,13 +10,6 @@
 }
 \end{frame}
 
-% TODO
-% Content:
-% 1. Creating a property (vertex, half-edge, edge, face)
-% 2. Accessing, updating property (per vertex, half-edge, edge, face)
-% 3. Example: v:point ... finding the barycenter
-% 4. Example: v:color ... coloring mesh vertices
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Properties}
@@ -31,71 +24,59 @@
 }
 \end{frame}
 
-\begin{frame}
-\frametitle{Half-edges connectivity}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-connectivity}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-\begin{itemize}
-	\color{black}
-	\item[\color{black}\textbullet] Each \textbf{vertex} is linked to an outgoing half-edge
-	\item[\color{black}\textbullet] Each \textbf{face} is linked to an incident half-edge
-	\item[\color{black}\textbullet] Each \textbf{half-edge} has \begin{itemize}
-		\color{black}
-		\item[\color{black}\textbullet] A next and previous half-edge
-		\item[\color{black}\textbullet] A target vertex it points to
-		\item[\color{black}\textbullet] An incident face
-		\item[\color{black}\textbullet] An opposite half-edge\\(on the same edge)
-	\end{itemize}
-\end{itemize}
-  \end{column}
-\end{columns}
-\end{frame}
-
 \begin{frame}[fragile]
-\frametitle{Half-edges code}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-queries}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-  \lstset{ 
-  	numbers=none, 
-  	xleftmargin=0cm, 
-  	xrightmargin=0cm
-  }
+\frametitle{Property code}
+\lstset{ numbers=none, xleftmargin=0cm }
 \begin{lstlisting}
-using Surface_mesh::Halfedge;
-using Surface_mesh::Face;
-using Surface_mesh::Vertex;
+typedef Surface_mesh Mesh;
 
-// the starting half-edge
-Halfedge h;
-// the connected elements
-Halfedge h0, h1, h2;
-Face f;
-Vertex v0, v1;
+// storing Color data on each vertex
+Mesh::Vertex_property<Color> colors;
+colors = mesh.vertex_property<Color>("v:color");
+
+// access property for vertex v
+Mesh::Vertex v;
+Color c = colors[v]; // get property
+colors[v] = Color(0, 0, 0); // set black
+
+// default position property
+Mesh::Vertex_property<Point> points;
+points = mesh.vertex_property<Point>("v:point");
 \end{lstlisting}
-  \end{column}
-\end{columns}
 \end{frame}
 
 \begin{frame}[fragile]
-\frametitle{Half-edges code}
+\frametitle{Property code}
 \begin{lstlisting}
-// next half-edge
-h0 = mesh.next_halfedge_handle(h);
-// previous half-edge
-h1 = mesh.prev_halfedge_handle(h);
-// opposite half-edge
-h2 = mesh.opposite_halfedge_handle(h);
-// incident face
-f = mesh.face_handle(h);
-// vertex at source
-v0 = mesh.from_vertex_handle(h);
-// vertex pointed by h
-v1 = mesh.to_vertex_handle(h);
+// for element Xxx, storing type T
+Mesh::Xxx_property<T> prop;
+prop = mesh.xxx_property<T>(name);
+// access with x of type Xxx
+T t = prop[x];
+\end{lstlisting}
+\misc{
+	where \ctext{Xxx} is one from 
+	\ctext{Vertex}, \ctext{Face}, \ctext{Edge} or \ctext{Halfedge}.
+	
+	\phantom{x}
+	
+	The storage type \ctext{T} can be any common type (color, location, integer, float, etc.).
+}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Normal properties}
+\misc{
+	Normals (of type \ctext{Normal}) can be computed automatically and are available in two flavors: per-vertex (property \ctext{"v:normal"}) of per-face (property \ctext{"f:normal"}).
+}
+\lstset{ numbers=none, xleftmargin=0cm}
+\begin{lstlisting}
+// compute normals
+mesh.update_vertex_normals();
+
+// access normals
+Mesh::Vertex_property<Normal> nrs;
+nrs = mesh.vertex_property<Normal>("v:normal");
+Normal n = nrs[v];
 \end{lstlisting}
 \end{frame}

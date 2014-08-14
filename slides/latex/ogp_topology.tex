@@ -8,90 +8,112 @@
 }
 \end{frame}
 
-% TODO
+%
 % Content:
 % 1. Adding vertices and faces
 % 2. Deleting elements (vertices, edges, faces)
 % 3. Other high-level operations (edge flip, edge/face split, halfedge collapse)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Half-edges}
-\begin{center}
-	\includegraphics[width=0.5\textwidth]{figures/halfedge-connectivity}
-\end{center}
+\begin{frame}[fragile]
+\frametitle{Creating a mesh}
 \misc{
-	Meshes are made of \emph{vertices}, \emph{edges} and \emph{faces}.
+	Meshes can be created from scratch by \textbf{adding} the geometry (mostly \textbf{vertices} and \textbf{faces}, opengp takes care of the edges).
+}
+\begin{lstlisting}
+typedef Surface_mesh::Vertex Vertex;
+Vertex v0, v1, v2, v3;
+// add vertices (at given locations)
+v0 = mesh.add_vertex(Point(0, 0, 0));
+v1 = mesh.add_vertex(Point(1, 0, 0));
+v2 = mesh.add_vertex(Point(0, 1, 0));
+// add face
+mesh.add_triangle(v0, v1, v2);
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Creating a mesh}
+\begin{lstlisting}[firstnumber=9]
+// add quad
+v3 = mesh.add_vertex(Point(-1, 1, 0));
+mesh.add_quad(v0, v1, v2, v3);
+
+// N-gone (perfect here)
+int N = 20;
+std::vector<Vertex> vert(N);
+for(int i = 0; i < N; ++i) {
+  Vertex v = mesh.add_vertex(
+    Point(std::cos(2.0f * M_PI * i),
+      0.0f, std::sin(2.0f * M_PI * i)) 
+  );
+  vert.push_back(v); // push at end
+}
+mesh.add_face(vert);
+\end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Destroyig a mesh}
+\misc{
+	Elements can be deleted too using one of
+	\begin{itemize}
+		\item \ctext{mesh.delete\_vertex(v)}
+		\item \ctext{mesh.delete\_edge(e)}
+		\item \ctext{mesh.delete\_face(f)}
+	\end{itemize}
 	
-	Here, each edge is made of two half-edges (directed edges).
+	The other parts that depend on the deleted element are also removed!
 }
 \end{frame}
 
 \begin{frame}
-\frametitle{Half-edges connectivity}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-connectivity}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-\begin{itemize}
-	\color{black}
-	\item[\color{black}\textbullet] Each \textbf{vertex} is linked to an outgoing half-edge
-	\item[\color{black}\textbullet] Each \textbf{face} is linked to an incident half-edge
-	\item[\color{black}\textbullet] Each \textbf{half-edge} has \begin{itemize}
-		\color{black}
-		\item[\color{black}\textbullet] A next and previous half-edge
-		\item[\color{black}\textbullet] A target vertex it points to
-		\item[\color{black}\textbullet] An incident face
-		\item[\color{black}\textbullet] An opposite half-edge\\(on the same edge)
-	\end{itemize}
-\end{itemize}
-  \end{column}
-\end{columns}
+\framedsl{
+	Beware when topology changes!
+}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Half-edges code}
-\begin{columns}[c]
-  \begin{column}{0.4\textwidth}
-\includegraphics[width=\textwidth]{figures/halfedge-queries}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-  \lstset{ 
-  	numbers=none, 
-  	xleftmargin=0cm, 
-  	xrightmargin=0cm
-  }
-\begin{lstlisting}
-using Surface_mesh::Halfedge;
-using Surface_mesh::Face;
-using Surface_mesh::Vertex;
-
-// the starting half-edge
-Halfedge h;
-// the connected elements
-Halfedge h0, h1, h2;
-Face f;
-Vertex v0, v1;
-\end{lstlisting}
-  \end{column}
-\end{columns}
+\begin{frame}
+\frametitle{Garbage collection}
+\misc{
+	Adding elements is safe.
+	
+	\phantom{x}
+	
+	Deleting elements can be dangerous. Elements are not directly
+	removed, instead they are just \textbf{marked} as deleted.
+	\\(but they are still in the data structure!)
+	
+	\phantom{x}
+	
+	Use \ctext{mesh.garbage\_collection()} to remove these elements and clean the mesh data!
+}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Half-edges code}
-\begin{lstlisting}
-// next half-edge
-h0 = mesh.next_halfedge_handle(h);
-// previous half-edge
-h1 = mesh.prev_halfedge_handle(h);
-// opposite half-edge
-h2 = mesh.opposite_halfedge_handle(h);
-// incident face
-f = mesh.face_handle(h);
-// vertex at source
-v0 = mesh.from_vertex_handle(h);
-// vertex pointed by h
-v1 = mesh.to_vertex_handle(h);
-\end{lstlisting}
+\begin{frame}
+\frametitle{Garbage collection}
+\misc{
+	When iterating over elements, do not call \ctext{garbage\_collection()}!
+	
+	\phantom{x}
+	
+	Instead, check whether the element \ctext{x} you are working with has been deleted
+	using \ctext{mesh.is\_deleted(x)}.
+}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\framedsl{
+	Going farther
+}
+\end{frame}
+
+\fbckg{backgrounds/topology-changes}
+\begin{frame}
+\frametitle{High-level topological operations}
+\misc{
+	The remeshing session will be about \textbf{edge collapse}, \textbf{edge split}, \textbf{face split}, \textbf{edge flip} and how to use them to improve the quality of our mesh.
+}
 \end{frame}
