@@ -69,16 +69,14 @@
   	xrightmargin=0cm
   }
 \begin{lstlisting}
-using Surface_mesh::Halfedge;
-using Surface_mesh::Face;
-using Surface_mesh::Vertex;
+typedef Surface_mesh Mesh;
 
 // the starting half-edge
-Halfedge h;
+Mesh::Halfedge h;
 // the connected elements
-Halfedge h0, h1, h2;
-Face f;
-Vertex v0, v1;
+Mesh::Halfedge h0, h1, h2;
+Mesh::Face f;
+Mesh::Vertex v0, v1;
 \end{lstlisting}
   \end{column}
 \end{columns}

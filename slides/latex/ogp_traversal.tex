@@ -17,8 +17,46 @@
 % 5. Circulators (vertex, edges, half-edges, faces)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]
+\frametitle{Iterators}
+\misc{
+	\textbf{Iterators} are used to traverse all the elements of a specific type (\emph{vertices}, \emph{halfedges}, \emph{edges} or \emph{faces}).
+}
+\begin{lstlisting}
+// iterating over all vertices
+Surface_mesh::Vertex_iterator vit, vend;
+for(vit = mesh.vertices_begin(),
+    vend = mesh.vertices_end();
+    vit != vend; ++vit){
+  Vertex v = *vit;
+  // do something with vertex v
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Iterators and ordering}
+\begin{lstlisting}
+// iterating over all half-edges
+Surface_mesh::Halfedge_iterator hit;
+hit = mesh.halfedges_begin();
+
+// iterating over all edges
+Surface_mesh::Edge_iterator eit;
+eit = mesh.edges_begin();
+
+// iterating over all faces
+Surface_mesh::Face_iterator fit;
+fit = mesh.faces_begin();
+\end{lstlisting}
+\misc{
+	Iterators traverse elements in the order they are stored in memory.
+	\textbf{You should not expect any ordering.}
+}
+\end{frame}
+
 \begin{frame}
-\frametitle{Half-edges}
+\frametitle{Iterators}
 \begin{center}
 	\includegraphics[width=0.5\textwidth]{figures/halfedge-connectivity}
 \end{center}
