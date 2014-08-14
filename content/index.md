@@ -18,12 +18,16 @@ For a detailed schedule, see [there](schedule).
 
 Slides
 ------
-*Coming soon!*
+  - *Work at LGG/EPFL*
+  - *Planarization component for Grasshopper*
+  - [Introduction to C++](/workshops/taipei14/media/introduction_cpp.pdf) (last update: 12/08)
+  - [Open Geometry Processing](/workshops/taipei14/media/opengp.pdf) (last update: 14/08)
+  - *Remeshing with OpenGP*
 
 Presenters
 ----------
-  - [Bailin Deng](http://lgg.epfl.ch/~bdeng/) (lgg, epfl)
-  - [Alexandre Kaspar](http://w-x.ch) (epfl)
+  - [Bailin Deng](http://lgg.epfl.ch/~bdeng/) (LGG, EPFL)
+  - [Alexandre Kaspar](http://w-x.ch) (EPFL)
 
 Organizers
 ----------

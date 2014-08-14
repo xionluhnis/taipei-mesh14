@@ -17,13 +17,13 @@ Workshop schedule
 
 **Monday 18th**
 
-  - Introduction to C++ with OpenFrameworks
-  - Mesh visualization with OpenMesh
+  - Projects with Grasshopper
+  - Introduction to C++
 
 **Tuesday 19th**
 
+  - Open Geometry Processing
   - Remeshing
-  - Questions and projects
 
 **Wednesday 20th**
 

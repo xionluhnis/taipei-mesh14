@@ -40,6 +40,7 @@ OpenFramework
     - [OpenGL](http://openframeworks.cc/tutorials/graphics/opengl.html)
     - [std::vector](http://openframeworks.cc/tutorials/c++%20concepts/001_stl_vectors_basic.html)
   - [OpenFramework Addons](http://ofxaddons.com/)
+    - [ofxOpenGP](https://github.com/xionluhnis/ofxOpenGP)
     - [ofxPostProcessing](https://github.com/neilmendoza/ofxPostProcessing) and [examples](http://www.neilmendoza.com/ofxpostprocessing/)
     - [ofxUI](https://github.com/rezaali/ofxUI) and [examples](http://www.syedrezaali.com/blog/?p=3102)
     - [ofxVoronoi2D](https://github.com/xionluhnis/ofxVoronoi2D)

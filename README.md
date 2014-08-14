@@ -3,7 +3,7 @@ Taipei Mesh 2014
 
 Slides and content for the [2014 workshop on Mesh Processing](https://www.facebook.com/groups/176534365780994/) in Taipei.
 
-Based on [PicoCMS](http://picocms.org/) with [YoctoManager](https://github.com/xionluhnis/yoctomanager) and [Adv-meta](https://github.com/shawnsandy/adv-meta).
+Based on [PicoCMS](http://picocms.org/) with [YoctoManager](https://github.com/xionluhnis/yoctomanager).
 
 Structure
 ---------
