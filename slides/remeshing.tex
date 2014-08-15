@@ -1,0 +1,109 @@
+\documentclass{fancyslides} 
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{listings}
+\usepackage{hyperref}
+
+
+%%% Beamer settings (do not change)
+\usetheme{default} 
+\setbeamertemplate{navigation symbols}{} %no navigation symbols
+\setbeamercolor{structure}{fg=\yourowntexcol} 
+\setbeamercolor{normal text}{fg=\yourowntexcol} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CUSTOMISATIONS %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% THE FOLLOWING COLOURS ARE PREDEFINED IN THE CLASS
+%bi -- WHITE
+%cz -- BLACK
+%sz -- GRAY
+%nieb -- BLUE
+%ziel -- GREEN
+%pom -- ORANGE
+%% YOU CAN DEFINE YOUR OWN COLOUR TO USE HERE. SEE MAN.PDF
+
+
+%%%% SLIDE ELEMENTS
+\newcommand{\structureopacity}{0.75} %opacity for the structure elements (boxes and dots)
+\newcommand{\strcolor}{pom} %elements colour (predefined nieb; pom; ziel)
+
+%%%% TEXT COLOUR
+\newcommand{\yourowntexcol}{bi}
+\newcommand{\stext}[1]{{\color{black}#1}}
+\newcommand{\ctext}[1]{{\ttfamily#1}}
+\newcommand{\B}{\color{black}}
+\newcommand{\tilda}{\raise.17ex\hbox{$\scriptstyle\sim$}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TITLE SLIDE DATA %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\titlephrase}{Topological Operations\\for Remeshing}
+\newcommand{\name}{Alexandre Kaspar}
+\newcommand{\affil}{EPFL / MIT}
+\newcommand{\email}{akaspar@mit.edu}
+
+\begin{document}
+
+%\fontencoding{T1}
+%\fontfamily{serif}
+%\fontseries{m}
+%\fontshape{it}
+%\fontsize{12}{15}
+%\selectfont
+
+\lstset{
+	language=C++,
+    basicstyle=\color{black}\ttfamily,
+    keywordstyle=\color{blue},
+    identifierstyle=\color{gray!50!black},
+    stringstyle=\color{green!50!black},
+    commentstyle=\color{gray}\ttfamily\textit,
+    morecomment=[l][\color{magenta}]{\#},
+    numbers=left,
+    numberstyle=\ttfamily,
+    numbersep=10pt,
+    xleftmargin=1cm
+}
+
+% blue color: 89a9d6
+
+\setbeamercolor{frametitle}{fg=gray}
+
+\startingslide %this generates titlepage from the data above
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SLIDES %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex/ogp_intro}
+\input{latex/ogp_helloworld}
+\input{latex/ogp_halfedge}
+\input{latex/ogp_traversal}
+\input{latex/ogp_properties}
+\input{latex/ogp_topology}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ENDING %%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\fbckg{backgrounds/blank2}
+\begin{frame}
+  \thankyou   %%%% ending slide with thank you notice
+\end{frame}
+
+\begin{frame}
+\sources{
+\includegraphics[height=1em]{figures/bunny-logo} \ \href{http://lgg.epfl.ch/}{LGG}'s course notes on remeshing, \textbf{Digital $3$D Geometry Processing}, given by B.Deng and B.Neubert in $2012$\\
+\includegraphics[height=1em]{figures/bunny-logo} \ Tutorials from \href{http://graphics.ethz.ch/publications/tutorials.php}{Computer Graphics Laboratory, ETH Zürich}\\
+\includegraphics[height=1em]{figures/bunny-logo} \ Chapter $10$ (Remeshing) of \textbf{\href{http://graphics.ethz.ch/Downloads/Publications/Tutorials/2007/Bot07a/SIG07Notes.pdf}{Geometric Modeling Based on Polygonal Meshes}}, ACM SIGGRAPH 2007 Course Notes from M.Botsch et al.
+}
+\end{frame}
+
+
+\end{document}
