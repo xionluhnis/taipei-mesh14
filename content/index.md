@@ -32,5 +32,3 @@ Presenters
 Organizers
 ----------
   - [Shih-Yuan Wang](http://www.shihyuanwang.com/)
-
-
