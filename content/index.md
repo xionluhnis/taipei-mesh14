@@ -18,11 +18,11 @@ For a detailed schedule, see [there](schedule).
 
 Slides
 ------
-  - *Work at LGG/EPFL*
-  - *Planarization component for Grasshopper*
-  - [Introduction to C++](/workshops/taipei14/media/introduction_cpp.pdf) (last update: 12/08)
-  - [Open Geometry Processing](/workshops/taipei14/media/opengp.pdf) (last update: 14/08)
-  - *Remeshing with OpenGP*
+  - [Work at LGG/EPFL](/workshops/taipei14/media/Intro_LGG.pdf)
+  - [Planarization for Grasshopper with LibShapeOp](/workshops/taipei14/media/Intro_LibShapeOp.pdf)
+  - [Introduction to C++](/workshops/taipei14/media/introduction_cpp.pdf)
+  - [Open Geometry Processing](/workshops/taipei14/media/opengp.pdf)
+  - [C# Programming](/workshops/taipei14/media/CS_programming.pdf)
 
 Presenters
 ----------

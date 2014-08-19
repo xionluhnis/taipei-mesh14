@@ -17,17 +17,13 @@ Workshop schedule
 
 **Monday 18th**
 
-  - Projects with Grasshopper
   - Introduction to C++
+  - Open Geometry Processing and half-edges
 
-**Tuesday 19th**
+**Tuesday 19th-20th**
 
-  - Open Geometry Processing
-  - Remeshing
-
-**Wednesday 20th**
-
-  - Projects and help
+  - Grasshopper C# scripting
+  - Projects and Q&amp;A
 
 **Thursday 21st**
 
