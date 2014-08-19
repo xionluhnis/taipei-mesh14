@@ -30,3 +30,9 @@ Monday 18th
   - [ofApp.h](/workshops/taipei14/media/ofApp.h)
 
 **Note**: to be saved in `addons/` with the folder names `ofxVoronoi2D` and `ofxOpenGP`. You may have to remove the `-master` part of the directory name if it gets added when you extract the files out of the zip archive.
+
+Tuesday 19th
+------------
+  - [Head model](/workshops/taipei14/media/max.off)
+  - [Plankton Scripts](/workshops/taipei14/media/PlanktonScripts.gh)
+  
